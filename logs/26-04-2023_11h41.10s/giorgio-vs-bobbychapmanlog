@@ -1,0 +1,6 @@
+2023-04-26 11:41:18,547:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 11:41:19,382:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 11:41:36,974:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Unable to Open Connection to 127.0.0.1:2000). Wait for 3 seconds
+2023-04-26 11:41:53,633:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Unable to Open Connection to 127.0.0.1:2000). Wait for 3 seconds
+2023-04-26 11:41:56,659:WARNING:Giorgio VS BobbyChapman:Giorgio has done too many Bad Moves
+2023-04-26 11:41:56,660:INFO:Giorgio VS BobbyChapman:Match Done. BobbyChapman Won

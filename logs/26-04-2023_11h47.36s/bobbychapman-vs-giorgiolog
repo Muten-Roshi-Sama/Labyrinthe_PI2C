@@ -1,0 +1,9 @@
+2023-04-26 11:48:10,580:INFO:BobbyChapman VS Giorgio:Match Started
+2023-04-26 11:48:11,145:DEBUG:BobbyChapman VS Giorgio:BobbyChapman play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 12}, 'gate': 'A', 'new_position': [7, 1]}
+2023-04-26 11:48:11,146:WARNING:BobbyChapman VS Giorgio:This is a Bad Move. Invalid new position
+2023-04-26 11:48:11,439:DEBUG:BobbyChapman VS Giorgio:BobbyChapman play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 12}, 'gate': 'A', 'new_position': [7, 1]}
+2023-04-26 11:48:11,440:WARNING:BobbyChapman VS Giorgio:This is a Bad Move. Invalid new position
+2023-04-26 11:48:11,761:DEBUG:BobbyChapman VS Giorgio:BobbyChapman play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 12}, 'gate': 'A', 'new_position': [7, 1]}
+2023-04-26 11:48:11,761:WARNING:BobbyChapman VS Giorgio:This is a Bad Move. Invalid new position
+2023-04-26 11:48:11,762:WARNING:BobbyChapman VS Giorgio:BobbyChapman has done too many Bad Moves
+2023-04-26 11:48:11,762:INFO:BobbyChapman VS Giorgio:Match Done. Giorgio Won

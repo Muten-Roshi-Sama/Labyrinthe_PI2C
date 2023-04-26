@@ -1,0 +1,27 @@
+2023-04-26 09:28:52,696:INFO:state:State Created
+2023-04-26 09:28:53,471:INFO:server:Game Server For Labyrinthe
+2023-04-26 09:28:53,618:INFO:ui:UI started
+2023-04-26 09:28:56,194:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 09:28:56,195:INFO:championship:Championship Task Started
+2023-04-26 09:28:56,197:INFO:state:State Dumper Started
+2023-04-26 09:29:17,277:INFO:inscription:Subscription received from 127.0.0.1:58631
+2023-04-26 09:29:17,278:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 09:29:18,344:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 09:29:38,021:INFO:inscription:Subscription received from 127.0.0.1:58636
+2023-04-26 09:29:38,022:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 09:29:39,086:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 09:29:49,015:INFO:championship:Remaining: 1/2
+2023-04-26 09:29:59,234:INFO:championship:Remaining: 0/2
+2023-04-26 09:34:48,972:INFO:state:Match Giorgio VS BobbyChapman Reset
+2023-04-26 09:34:48,973:INFO:state:Match BobbyChapman VS Giorgio Reset
+2023-04-26 09:34:48,974:INFO:state:Client BobbyChapman Removed
+2023-04-26 09:34:50,497:INFO:state:Client Giorgio Removed
+2023-04-26 09:34:54,803:INFO:inscription:Subscription received from 127.0.0.1:58750
+2023-04-26 09:34:54,804:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 09:34:55,849:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 09:35:00,314:INFO:inscription:Subscription received from 127.0.0.1:58752
+2023-04-26 09:35:00,315:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 09:35:01,348:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 09:35:11,882:INFO:championship:Remaining: 1/2
+2023-04-26 09:35:26,160:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-04-26 09:35:29,226:ERROR:network:Unable to Open Connection to 127.0.0.1:8880

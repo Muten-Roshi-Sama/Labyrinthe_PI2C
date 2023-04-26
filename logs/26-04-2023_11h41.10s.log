@@ -1,0 +1,30 @@
+2023-04-26 11:41:10,374:INFO:state:State Created
+2023-04-26 11:41:11,265:INFO:server:Game Server For Labyrinthe
+2023-04-26 11:41:11,412:INFO:ui:UI started
+2023-04-26 11:41:12,958:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 11:41:12,959:INFO:championship:Championship Task Started
+2023-04-26 11:41:12,960:INFO:state:State Dumper Started
+2023-04-26 11:41:14,730:INFO:inscription:Subscription received from 127.0.0.1:60069
+2023-04-26 11:41:14,732:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 11:41:15,814:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 11:41:17,300:INFO:inscription:Subscription received from 127.0.0.1:60071
+2023-04-26 11:41:17,301:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 11:41:18,398:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 11:41:33,600:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:41:36,973:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:41:47,274:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:41:53,633:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:42:00,843:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:42:00,846:INFO:championship:Remaining: 1/2
+2023-04-26 11:42:14,423:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:42:27,594:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:42:40,776:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:43:03,831:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:43:19,902:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:43:33,475:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:43:46,697:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:44:00,065:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:44:13,769:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:44:27,210:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:44:40,306:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 11:44:53,506:ERROR:network:Unable to Open Connection to 127.0.0.1:2000

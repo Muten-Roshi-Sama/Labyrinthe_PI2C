@@ -5,7 +5,7 @@ import json
 import copy
 from collections import deque
 import time as time
-import random as r
+import random
 #--
 # import sys
 # sys.path.append('C:\Users\vassi\OneDrive\Bureau\Cours\BA2\Q2\Projet_Info\Labo_5_Projet\PI2CChampionshipRunner\games\labyrinthe\game.py')
@@ -14,6 +14,9 @@ import random as r
 """LAUNCH SERVER"""
 # Work PC : & C:/Users/vassi/AppData/Local/Programs/Python/Python39/python.exe c:/Users/vassi/OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/PI2CChampionshipRunner/server.py labyrinthe
 # Home PC : & c:/Users/Vass/OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/PI2CChampionshipRunner/server.py labyrinthe
+
+#GIT : /OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
+
 
 
 #-----Variables----------
@@ -38,7 +41,95 @@ serverAddress = ('localhost', 3000)
 # serverAddress = ('192.168.0.138', 3000) #work PC
 
 
-#-----------------------------------------------
+
+
+
+
+
+
+
+
+
+#--------------Level_1--------------------------
+"""Connecting to the server"""
+
+"""
+move = {"tile": turn_tile(turn_tile(turn_tile(turn_tile(state["tile"])))), "gate": "C", "new_position": 8})
+"""
+# s.connect(serverAddress)
+
+request = {
+"request": "subscribe",
+"port": request_port,
+"name": player_name,
+"matricules": Matricules
+}
+
+with socket.socket() as s:
+    s.connect(serverAddress)
+    s.send(json.dumps(request).encode())
+    response = s.recv(max_recv_length).decode()
+
+print(response)
+
+
+def main():
+    with socket.socket() as s:
+        s.bind(('', request_port))
+        s.settimeout(1)
+        s.listen()
+        try:
+            client, address = s.accept()
+            with client:
+                request = client.recv(max_recv_length).decode()
+                print(request)
+
+                message = json.loads(request)["request"]
+                req = json.loads(request)
+                # print(message, 'hohoh')
+
+                if message == "ping":
+                    client.send(json.dumps({'response': 'pong'}).encode())
+
+                elif message == "play":
+                    # print()
+                    lives = req["lives"]
+                    error_list = req["errors"]
+                    state = req["state"]
+                    index = state["current"]
+                    tile = state["tile"]
+                    # print(state["board"])
+                    print("mypos", state["positions"][index])
+                    chosen_move = {"tile": tile, "gate": random.choice(["A", "B"]),
+                                    "new_position": successors(state["positions"][index], state)[0]}
+                    print("chosen_move", chosen_move)
+                    print(successors(state["positions"][index]))
+                    client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
+
+                elif message == "state":
+                    time_start = time.time()
+                    state = message
+                    # print(state)
+                    print(state["positions"][0])
+                    # print(BFS(state["positions"][0]))
+        except socket.timeout:
+            pass
+        except OSError:
+            print("Server address not reachable.")
+
+
+
+
+
+
+
+
+
+#-----------------LEVEL_2------------------- 
+"""Operator functions"""
+
+
+
 GATES = {
     "A": {"start": 1, "end": 43, "inc": 7},
     "B": {"start": 3, "end": 45, "inc": 7},
@@ -109,74 +200,62 @@ def isSameTile(t1, t2):
     return False
 
 
-#---------------------------------------------------------
+def random_turn_tile(tile):
+    for _ in range(random.randint(1, 4)):
+        tile = turn_tile(tile)
+    return tile
+
+
+def makeTiles():
+    """creation of labyrinth"""
+    tiles = []
+    straight = {"N": True, "E": False, "S": True, "W": False, "item": None}
+    corner = {"N": True, "E": True, "S": False, "W": False, "item": None}
+    tee = {"N": True, "E": True, "S": True, "W": False, "item": None}
+    for _ in range(12):
+        tiles.append(random_turn_tile(straight))
+    for _ in range(10):
+        tiles.append(random_turn_tile(corner))
+    treasure = 12
+    for _ in range(6):
+        tiles.append(random_turn_tile(dict(corner, item=treasure)))
+        treasure += 1
+    for _ in range(6):
+        tiles.append(random_turn_tile(dict(tee, item=treasure)))
+        treasure += 1
+    random.shuffle(tiles)
+    return tiles
+
+
+def index2coords(index):
+    return index // 7, index % 7
+
+
+def coords2index(i, j):
+    return i * 7 + j
+
+
+def isCoordsValid(i, j):
+    return i >= 0 and i < 7 and j >= 0 and i < 7
+
+
+def add(A, B):
+    return tuple(a + b for a, b in zip(A, B))
 
 
 
-#--------------Level_1--------------------------
-"""Connecting to the server"""
-
-
-"""
-move = {"tile": turn_tile(turn_tile(turn_tile(turn_tile(state["tile"])))), "gate": "C", "new_position": 8})
-"""
-# s.connect(serverAddress)
-
-request = {
-"request": "subscribe",
-"port": request_port,
-"name": player_name,
-"matricules": Matricules
-}
-
-with socket.socket() as s:
-    s.connect(serverAddress)
-    s.send(json.dumps(request).encode())
-    response = s.recv(max_recv_length).decode()
-
-print(response)
-
-
-def main():
-    with socket.socket() as s:
-        s.bind(('', request_port))
-        s.settimeout(1)
-        s.listen()
-        try:
-            client, address = s.accept()
-            with client:
-                request = client.recv(max_recv_length).decode()
-                # print("1", request)
-
-                message = json.loads(request)["request"]
-                # print(message, 'hohoh')
-
-                if message == "ping":
-                    client.send(json.dumps({'response': 'pong'}).encode())
-
-                elif message == "play":
-                    print(message)
-                    # lives = request["lives"]
-                    # error_list = request["errors"]
-                    # state = request["state"]
-
-                    chosen_move = {"tile": 6, "gate": "C", "new_position": 8}
-                    # client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }))
-
-                elif message == "state":
-                    time_start = time.time()
-                    state = message
-                    # print(state)
-                    print(state["positions"][0])
-                    # print(BFS(state["positions"][0]))
-        except socket.timeout:
-            pass
-        except OSError:
-            print("Server address not reachable.")
 
 
 
-#---------LEVEL_2--------------------
+
+
+
+
+
+
+
+
+#---------LEVEL_3--------------------
 """Moving and AI path """
 
 """
@@ -189,34 +268,31 @@ on joue seul (Best-First meilleur choix selon prof + eliminer un max de poss au 
 prof dans son code utilise du Breadth First mais peu importe car il joue en random)
 """
 
-def BFS(start, successor):
-    """Best_First_Search"""
-    q = deque()
-    # q.append(start)
-    parent = {}
-    parent[start]= None
-    node = start
-    while time.time() - time.start < timeout:
-        for successor in successor(node):
-            if successor not in parent:
-                parent[successor] = node.enqueue(successor)
-        node = q.dequeue()
-    res = []
-    while node is not None:
-        res.append(node)
-        node = parent[node]
-    
-    return list(reversed(res))
+class PriorityQueue:
+	def __init__(self):
+		self.data = []
+
+	def enqueue(self, value, priority):
+		# Could be better
+		self.data.append({'value': value, 'priority': priority})
+		self.data.sort(key=lambda elem: elem['priority'])
+
+	def dequeue(self):
+		return self.data.pop(0)['value']
+
+	def isEmpty(self):
+		return len(self.data) == 0
 
 
-def BestFS(start,successors, goals, heuristic):
-    q = deque()
+
+def BestFS(start,successors, goals, heuristic, state):
+    q = PriorityQueue()
     parent = {}
     parent[start] = None
     q.enqueue(start, heuristic(start))
     while not q.isEmpty():
         node = q.dequeue()
-        if node in goals:
+        if path(state["positions"][0], state["target"], node, successors):
             break
         for successor in successors(node):
             if successor not in parent:
@@ -233,21 +309,59 @@ def BestFS(start,successors, goals, heuristic):
 
 
 
-def successors(node, state):
+def successors(index, state):
+    """Check all possible movement starting from the index of the tile."""
     board = state["board"]
-    current_pos = state['positions'][0]
     res = []
-    directions = {'go_left' : (board[current_pos + 1]['W'], current_pos + 1),
-                'go_right' : (board[current_pos - 1]['E'], current_pos - 1),
-                'go_up' : (board[current_pos - 7]['S'], current_pos - 7),
-                'go_down' : (board[current_pos + 7]['N'], current_pos + 7)}
-    l, c = node
-    for dl, dc in directions:
-        nl = l + dl
-        nc = c + dc
-        if board[nl][nc] in [' ', 'E']:
-            res.append((nl, nc))
+    for dir in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+        coords = add(index2coords(index), dir)
+        dirName = DIRECTIONS[dir]["name"]
+        opposite = DIRECTIONS[dirName]["opposite"]
+        # breakpoint()
+        if isCoordsValid(*coords):
+            if board[index][dirName] and board[coords2index(*coords)][opposite]:
+                res.append(coords2index(*coords))
     return res
+
+
+def path(start, end, board, successor):
+    try:
+        res = BestFS(start, successors, [end])
+        print(res)
+        return res
+    except IndexError:
+        return None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def successors(node, state):
+#     board = state["board"]
+#     current_pos = state['positions'][0]
+#     res = []
+#     directions = {'go_left' : (board[current_pos + 1]['W'], current_pos + 1),
+#                 'go_right' : (board[current_pos - 1]['E'], current_pos - 1),
+#                 'go_up' : (board[current_pos - 7]['S'], current_pos - 7),
+#                 'go_down' : (board[current_pos + 7]['N'], current_pos + 7)}
+#     l, c = node
+#     for dl, dc in directions:
+#         nl = l + dl
+#         nc = c + dc
+#         if board[nl][nc] in [' ', 'E']:
+#             res.append((nl, nc))
+#     return res
+
 
 def manhattan_distance(current_pos, goal_pos):
     """
@@ -256,13 +370,12 @@ def manhattan_distance(current_pos, goal_pos):
     return abs(current_pos[0] - goal_pos[0]) + abs(current_pos[1] - goal_pos[1])
 
 
-def heuristic_prof(node):
-    l, c = node
-    return (l-1)*2 + (c-9)**2
+
+"""Heuristic: maximiser les nombre de tresors auquels j'ai acces et minimiser ceux de l'adversaire"""
 
 
 
-
+#-------------------------------------
 
 while __name__ == '__main__':
     main()
@@ -273,14 +386,14 @@ while __name__ == '__main__':
 
 
 
-
-
-
-
-
-
 #-----------
 '''
+
+
+   directions = {'go_left' : (board[current_pos + 1]['W'], current_pos + 1),
+                'go_right' : (board[current_pos - 1]['E'], current_pos - 1),
+                'go_up' : (board[current_pos - 7]['S'], current_pos - 7),
+                'go_down' : (board[current_pos + 7]['N'], current_pos + 7)}
 
 pos_history = []
 
@@ -385,6 +498,34 @@ def slideTiles(board, free, gate):
         src -= inc # 43 - 7 -7
     new_board[start] = free # ejected tile
     return new_board, new_free
+
+
+
+
+
+
+#-------------------------------------
+
+def BFS(start, successor):
+    """Best_First_Search"""
+    q = deque()
+    # q.append(start)
+    parent = {}
+    parent[start]= None
+    node = start
+    while time.time() - time.start < timeout:
+        for successor in successor(node):
+            if successor not in parent:
+                parent[successor] = node.enqueue(successor)
+        node = q.dequeue()
+    res = []
+    while node is not None:
+        res.append(node)
+        node = parent[node]
+    
+    return list(reversed(res))
+
+
 
 
 

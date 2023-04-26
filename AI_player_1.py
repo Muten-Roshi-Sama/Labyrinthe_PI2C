@@ -96,10 +96,15 @@ def main():
                     lives = req["lives"]
                     error_list = req["errors"]
                     state = req["state"]
-
-                    tile = {}
-                    chosen_move = {"tile": tile, "gate": "C", "new_position": 8}
-                    client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }))
+                    index = state["current"]
+                    tile = state["tile"]
+                    # print(state["board"])
+                    print("mypos", state["positions"][index])
+                    chosen_move = {"tile": tile, "gate": random.choice(["A", "B"]),
+                                    "new_position": successors(state["positions"][index], state)[0]}
+                    print("chosen_move", chosen_move)
+                    print(successors(state["positions"][index]))
+                    client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
 
                 elif message == "state":
                     time_start = time.time()
@@ -280,14 +285,14 @@ class PriorityQueue:
 
 
 
-def BestFS(start,successors, goals, heuristic):
+def BestFS(start,successors, goals, heuristic, state):
     q = PriorityQueue()
     parent = {}
     parent[start] = None
     q.enqueue(start, heuristic(start))
     while not q.isEmpty():
         node = q.dequeue()
-        if node in goals:
+        if path(state["positions"][0], state["target"], node, successors):
             break
         for successor in successors(node):
             if successor not in parent:
@@ -304,18 +309,19 @@ def BestFS(start,successors, goals, heuristic):
 
 
 
-def successors(index):
-        board = state["board"]
-        res = []
-        for dir in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-            coords = add(index2coords(index), dir)
-            dirName = DIRECTIONS[dir]["name"]
-            opposite = DIRECTIONS[dirName]["opposite"]
-            # breakpoint()
-            if isCoordsValid(*coords):
-                if board[index][dirName] and board[coords2index(*coords)][opposite]:
-                    res.append(coords2index(*coords))
-        return res
+def successors(index, state):
+    """Check all possible movement starting from the index of the tile."""
+    board = state["board"]
+    res = []
+    for dir in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+        coords = add(index2coords(index), dir)
+        dirName = DIRECTIONS[dir]["name"]
+        opposite = DIRECTIONS[dirName]["opposite"]
+        # breakpoint()
+        if isCoordsValid(*coords):
+            if board[index][dirName] and board[coords2index(*coords)][opposite]:
+                res.append(coords2index(*coords))
+    return res
 
 
 def path(start, end, board, successor):
@@ -340,21 +346,21 @@ def path(start, end, board, successor):
 
 
 
-def successors(node, state):
-    board = state["board"]
-    current_pos = state['positions'][0]
-    res = []
-    directions = {'go_left' : (board[current_pos + 1]['W'], current_pos + 1),
-                'go_right' : (board[current_pos - 1]['E'], current_pos - 1),
-                'go_up' : (board[current_pos - 7]['S'], current_pos - 7),
-                'go_down' : (board[current_pos + 7]['N'], current_pos + 7)}
-    l, c = node
-    for dl, dc in directions:
-        nl = l + dl
-        nc = c + dc
-        if board[nl][nc] in [' ', 'E']:
-            res.append((nl, nc))
-    return res
+# def successors(node, state):
+#     board = state["board"]
+#     current_pos = state['positions'][0]
+#     res = []
+#     directions = {'go_left' : (board[current_pos + 1]['W'], current_pos + 1),
+#                 'go_right' : (board[current_pos - 1]['E'], current_pos - 1),
+#                 'go_up' : (board[current_pos - 7]['S'], current_pos - 7),
+#                 'go_down' : (board[current_pos + 7]['N'], current_pos + 7)}
+#     l, c = node
+#     for dl, dc in directions:
+#         nl = l + dl
+#         nc = c + dc
+#         if board[nl][nc] in [' ', 'E']:
+#             res.append((nl, nc))
+#     return res
 
 
 def manhattan_distance(current_pos, goal_pos):

@@ -1,0 +1,57 @@
+2023-04-26 11:55:45,370:INFO:state:State Created
+2023-04-26 11:55:46,172:INFO:server:Game Server For Labyrinthe
+2023-04-26 11:55:46,299:INFO:ui:UI started
+2023-04-26 11:55:47,597:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 11:55:47,598:INFO:championship:Championship Task Started
+2023-04-26 11:55:47,599:INFO:state:State Dumper Started
+2023-04-26 11:55:49,771:INFO:inscription:Subscription received from 127.0.0.1:50087
+2023-04-26 11:55:49,772:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 11:55:50,831:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 11:55:53,615:INFO:inscription:Subscription received from 127.0.0.1:50090
+2023-04-26 11:55:53,616:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 11:55:54,735:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 11:55:56,845:INFO:championship:Remaining: 1/2
+2023-04-26 11:56:00,045:INFO:championship:Remaining: 0/2
+2023-04-26 11:57:00,170:INFO:state:Match Giorgio VS BobbyChapman Reset
+2023-04-26 11:57:00,174:INFO:state:Match BobbyChapman VS Giorgio Reset
+2023-04-26 11:57:00,174:INFO:state:Client BobbyChapman Removed
+2023-04-26 11:57:01,569:INFO:state:Client Giorgio Removed
+2023-04-26 11:57:10,489:INFO:inscription:Subscription received from 127.0.0.1:50135
+2023-04-26 11:57:10,491:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 11:57:11,576:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 11:57:12,242:INFO:inscription:Subscription received from 127.0.0.1:50137
+2023-04-26 11:57:12,243:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 11:57:16,212:INFO:championship:Remaining: 1/2
+2023-04-26 11:57:19,784:INFO:championship:Remaining: 0/2
+2023-04-26 12:00:07,500:INFO:inscription:Subscription received from 127.0.0.1:50174
+2023-04-26 12:00:07,501:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 12:00:08,551:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 12:00:11,521:INFO:inscription:Subscription received from 127.0.0.1:50176
+2023-04-26 12:00:11,532:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 12:00:12,556:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 12:00:24,486:INFO:state:Match Giorgio VS BobbyChapman Reset
+2023-04-26 12:00:24,487:INFO:state:Match BobbyChapman VS Giorgio Reset
+2023-04-26 12:00:24,487:INFO:state:Client BobbyChapman Removed
+2023-04-26 12:00:25,431:INFO:state:Client Giorgio Removed
+2023-04-26 12:00:31,223:INFO:inscription:Subscription received from 127.0.0.1:50179
+2023-04-26 12:00:31,224:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 12:00:32,307:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 12:00:37,408:INFO:inscription:Subscription received from 127.0.0.1:50182
+2023-04-26 12:00:37,410:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 12:00:38,513:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 12:00:40,305:INFO:championship:Remaining: 1/2
+2023-04-26 12:00:42,246:INFO:championship:Remaining: 0/2
+2023-04-26 12:02:16,385:INFO:state:Match Giorgio VS BobbyChapman Reset
+2023-04-26 12:02:16,386:INFO:state:Match BobbyChapman VS Giorgio Reset
+2023-04-26 12:02:16,386:INFO:state:Client BobbyChapman Removed
+2023-04-26 12:02:16,880:INFO:state:Client Giorgio Removed
+2023-04-26 12:02:21,771:INFO:inscription:Subscription received from 127.0.0.1:50216
+2023-04-26 12:02:21,772:INFO:inscription:Pending client: BobbyChapman (127.0.0.1:8880)
+2023-04-26 12:02:22,858:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 12:02:32,919:INFO:inscription:Subscription received from 127.0.0.1:50218
+2023-04-26 12:02:32,921:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 12:02:34,060:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 12:02:36,119:INFO:championship:Remaining: 1/2
+2023-04-26 12:02:38,686:INFO:championship:Remaining: 0/2
+2023-04-26 12:17:13,377:INFO:server:Championship Task Stopped
+2023-04-26 12:17:13,388:INFO:server:State Dumper Task Stopped
