@@ -1,0 +1,26 @@
+2023-04-26 16:42:42,062:INFO:state:State Created
+2023-04-26 16:42:42,506:INFO:server:Game Server For Labyrinthe
+2023-04-26 16:42:42,574:INFO:ui:UI started
+2023-04-26 16:42:44,206:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 16:42:44,207:INFO:championship:Championship Task Started
+2023-04-26 16:42:44,208:INFO:state:State Dumper Started
+2023-04-26 16:42:44,759:INFO:inscription:Subscription received from 192.168.0.138:56111
+2023-04-26 16:42:44,760:INFO:inscription:Pending client: Player_2 (192.168.0.138:2000)
+2023-04-26 16:42:45,772:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-04-26 16:42:47,526:INFO:inscription:Subscription received from 192.168.0.138:56113
+2023-04-26 16:42:47,527:INFO:inscription:Pending client: Player_1 (192.168.0.138:8880)
+2023-04-26 16:42:48,580:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-04-26 16:43:03,240:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:43:06,129:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:43:13,376:INFO:state:Match Player_1 VS Player_2 Reset
+2023-04-26 16:43:13,376:INFO:state:Client Player_2 Removed
+2023-04-26 16:43:13,655:INFO:state:Client Player_1 Removed
+2023-04-26 16:43:16,830:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:43:17,400:INFO:inscription:Subscription received from 192.168.0.138:56159
+2023-04-26 16:43:17,401:INFO:inscription:Pending client: Player_2 (192.168.0.138:2000)
+2023-04-26 16:43:18,422:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-04-26 16:43:20,020:INFO:inscription:Subscription received from 192.168.0.138:56161
+2023-04-26 16:43:20,020:INFO:inscription:Pending client: Player_1 (192.168.0.138:8880)
+2023-04-26 16:43:21,082:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-04-26 16:43:24,315:INFO:championship:Remaining: 1/2
+2023-04-26 16:43:32,200:INFO:championship:Remaining: 0/2

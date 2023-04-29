@@ -1,0 +1,13 @@
+2023-04-26 17:01:35,600:INFO:Player_1 VS Player_2:Match Started
+2023-04-26 17:01:36,095:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 23}, 'gate': 'A', 'new_position': 1}
+2023-04-26 17:01:36,452:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': True, 'item': 19}, 'gate': 'C', 'new_position': 47}
+2023-04-26 17:01:36,705:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'K', 'new_position': 8}
+2023-04-26 17:01:36,977:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 14}, 'gate': 'I', 'new_position': 46}
+2023-04-26 17:01:37,285:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 23}, 'gate': 'G', 'new_position': 8}
+2023-04-26 17:01:37,570:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': True, 'item': 19}, 'gate': 'A', 'new_position': 47}
+2023-04-26 17:01:37,881:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 14}, 'gate': 'J', 'new_position': 8}
+2023-04-26 17:01:38,209:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 15}, 'gate': 'D', 'new_position': 40}
+2023-04-26 17:01:38,612:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 0}
+2023-04-26 17:01:39,017:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 15}, 'gate': 'B', 'new_position': 41}
+2023-04-26 17:01:39,282:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 22}, 'gate': 'C', 'new_position': 1}
+2023-04-26 17:01:39,529:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 23}, 'gate': 'F', 'new_position': 40}

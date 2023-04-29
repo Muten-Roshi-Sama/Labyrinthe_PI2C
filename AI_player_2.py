@@ -1,6 +1,5 @@
 import asyncio
 import argparse
-
 import threading
 import socket
 import json
@@ -11,7 +10,11 @@ import time as time
 import random
 
 
+#GIT : /OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
 
+
+
+#-----Variables----------
 player = 2
 
 if player == 1:
@@ -22,10 +25,19 @@ elif player == 2 :
     player_name = "Player_2"
     request_port = 2000
     Matricules = ["21245", "3333"]
+
+
 max_recv_length = 10000
 timeout = 3000 #milliseconds
 serverAddress = ('localhost', 3000) 
-    
+
+
+
+
+#--------------Level_1--------------------------
+"""Connecting to the server"""
+
+
 request = {
 "request": "subscribe",
 "port": request_port,
@@ -33,18 +45,6 @@ request = {
 "matricules": Matricules
 }
 
-
-
-
-
-
-
-
-
-
-
-#--------------Level_1--------------------------
-"""Connecting to the server"""
 with socket.socket() as s:
     s.connect(serverAddress)
     s.send(json.dumps(request).encode())
@@ -69,7 +69,6 @@ def main():
                 if message == "ping":
                     client.send(json.dumps({'response': 'pong'}).encode())
 
-
                 elif message == "state":
                     time_start = time.time()
                     state = message
@@ -79,9 +78,7 @@ def main():
                     # print(state["positions"][my_index])
                     # print(BFS(state["positions"][0]))
 
-
-                elif message == "play":
-                    # print()
+                elif message == "play":            #TODO
                     lives = req["lives"]
                     error_list = req["errors"]
                     print("ERRORS : ", error_list)
@@ -93,7 +90,11 @@ def main():
                     #-------------
                     #
                     tile = state["tile"]
-                    moves = successors(my_index, state)
+
+                    chosen_gate = random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L"])
+                    move_gate = {"tile": tile, "gate": chosen_gate}
+                    new_state = next(state, move_gate)
+                    moves = successors(my_index, new_state)
                     print("moves = ",moves)
                     #
                     if len(moves) == 1:  # if seq contains 0 or 1 element
@@ -105,11 +106,12 @@ def main():
                     #
                     # print(state["board"])
                     #
-                    chosen_move = {"tile": tile, "gate": random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L"]),
-                                    "new_position": random_move}
+                    chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": random_move}
+
                     print("chosen_move = ", chosen_move["new_position"])
                     print()
                     client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
+                
                 
         except socket.timeout:
             pass
@@ -230,9 +232,6 @@ def add(A, B):
 
 
 
-
-
-
 #---------LEVEL_3--------------------
 """Moving and AI path """
 
@@ -252,7 +251,150 @@ def successors(index, state):
     return res
 
 
+
+
+
+
+
+def next(state, move):
+
+        new_state = copy.deepcopy(state)
+
+        new_board, new_free = slideTiles(state["board"], move["tile"], move["gate"])
+        new_state["board"] = new_board
+        new_state["tile"] = new_free
+
+        new_positions = []
+        for position in state["positions"]:
+            if onTrack(position, move["gate"]):
+                if position == GATES[move["gate"]]["end"]:
+                    new_positions.append(GATES[move["gate"]]["start"])
+                    continue
+                new_positions.append(position + GATES[move["gate"]]["inc"])
+                continue
+            new_positions.append(position)
+
+        new_state["positions"] = new_positions
+
+        # if (
+        #     path(
+        #         new_state["positions"][state["current"]],
+        #         move["new_position"],
+        #         new_state["board"],
+        #     )
+        #     is None
+        # ):
+        #     raise game.BadMove("Your new_position is unreachable")
+
+        # new_state["positions"][state["current"]] = move["new_position"]
+
+        # if (
+        #     new_state["board"][new_state["positions"][state["current"]]]["item"]
+        #     == targets[state["current"]][-1]
+        # ):
+        #     targets[state["current"]].pop()
+        #     if len(targets[state["current"]]) == 0:
+        #         new_state["remaining"] = 0
+        #         new_state["target"] = None
+        #         raise game.GameWin(state["current"], new_state)
+
+        # new_state["current"] = (new_state["current"] + 1) % 2
+
+        # new_state["target"] = targets[new_state["current"]][-1]
+        # new_state["remaining"] = [len(trg) for trg in targets]
+
+        return new_state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #--------------RUN-------------------
 
 while __name__ == '__main__':
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('player', help='The player you want to be (1 or 2)')
+    # args = parser.parse_args()
+    # asyncio.run(init_variables(args.player))
     main()
+
+
+
+
+#-----------Temporary_Storage-----------------
+
+class PriorityQueue:
+	def __init__(self):
+		self.data = []
+
+	def enqueue(self, value, priority):
+		# Could be better
+		self.data.append({'value': value, 'priority': priority})
+		self.data.sort(key=lambda elem: elem['priority'])
+
+	def dequeue(self):
+		return self.data.pop(0)['value']
+
+	def isEmpty(self):
+		return len(self.data) == 0
+
+
+
+def BestFS(start,successors, goals, heuristic, state):
+    q = PriorityQueue()
+    parent = {}
+    parent[start] = None
+    q.enqueue(start, heuristic(start))
+    while not q.isEmpty():
+        node = q.dequeue()
+        if path(state["positions"][0], state["target"], node, successors):
+            break
+        for successor in successors(node):
+            if successor not in parent:
+                parent[successor] = node
+                q.enqueue(successor, heuristic(successor))
+        node = None
+
+    res = []
+    while node is not None:
+        res.append(node)
+        node = parent[node]
+
+    return list(reversed(res))  
+
+
+def manhattan_distance(current_pos, goal_pos):
+    """
+    Calculate the Manhattan distance heuristic between current_pos and goal_pos.
+    """
+    return abs(current_pos[0] - goal_pos[0]) + abs(current_pos[1] - goal_pos[1])
+
+
+
+"""Heuristic: maximiser les nombre de tresors auquels j'ai acces et minimiser ceux de l'adversaire"""
+

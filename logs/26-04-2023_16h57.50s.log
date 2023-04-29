@@ -1,0 +1,22 @@
+2023-04-26 16:57:50,223:INFO:state:State Created
+2023-04-26 16:57:50,923:INFO:server:Game Server For Labyrinthe
+2023-04-26 16:57:51,050:INFO:ui:UI started
+2023-04-26 16:57:52,388:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 16:57:52,389:INFO:championship:Championship Task Started
+2023-04-26 16:57:52,389:INFO:state:State Dumper Started
+2023-04-26 16:57:53,025:INFO:inscription:Subscription received from 192.168.0.138:56544
+2023-04-26 16:57:53,026:INFO:inscription:Pending client: Player_2 (192.168.0.138:2000)
+2023-04-26 16:57:54,063:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-04-26 16:57:56,145:INFO:inscription:Subscription received from 192.168.0.138:56547
+2023-04-26 16:57:56,146:INFO:inscription:Pending client: Player_1 (192.168.0.138:8880)
+2023-04-26 16:57:57,202:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-04-26 16:57:59,966:INFO:championship:Remaining: 1/2
+2023-04-26 16:58:03,404:INFO:championship:Remaining: 0/2
+2023-04-26 17:01:11,597:INFO:inscription:Subscription received from 192.168.0.138:56623
+2023-04-26 17:01:11,598:INFO:inscription:Pending client: Player_2 (192.168.0.138:2000)
+2023-04-26 17:01:12,662:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-04-26 17:01:13,606:INFO:inscription:Subscription received from 192.168.0.138:56625
+2023-04-26 17:01:13,606:INFO:inscription:Pending client: Player_1 (192.168.0.138:8880)
+2023-04-26 17:01:14,642:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-04-26 17:01:20,682:INFO:server:Championship Task Stopped
+2023-04-26 17:01:20,683:INFO:server:State Dumper Task Stopped

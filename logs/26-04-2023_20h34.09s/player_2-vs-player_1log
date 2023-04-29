@@ -1,0 +1,76 @@
+2023-04-26 20:34:26,586:INFO:Player_2 VS Player_1:Match Started
+2023-04-26 20:34:26,976:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 7}
+2023-04-26 20:34:27,285:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 18}, 'gate': 'B', 'new_position': 47}
+2023-04-26 20:34:27,589:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'K', 'new_position': 0}
+2023-04-26 20:34:27,927:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 46}
+2023-04-26 20:34:28,963:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 7}
+2023-04-26 20:34:29,214:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 45}
+2023-04-26 20:34:29,535:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'B', 'new_position': 8}
+2023-04-26 20:34:29,872:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'D', 'new_position': 4}
+2023-04-26 20:34:30,131:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 14}
+2023-04-26 20:34:30,448:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 12}, 'gate': 'D', 'new_position': 3}
+2023-04-26 20:34:30,766:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'D', 'new_position': 15}
+2023-04-26 20:34:31,081:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 4}
+2023-04-26 20:34:31,377:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 19}, 'gate': 'F', 'new_position': 7}
+2023-04-26 20:34:31,710:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'J', 'new_position': 3}
+2023-04-26 20:34:32,067:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 19}, 'gate': 'F', 'new_position': 8}
+2023-04-26 20:34:32,500:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'A', 'new_position': 2}
+2023-04-26 20:34:32,740:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 14}
+2023-04-26 20:34:32,743:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 20:34:33,032:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'H', 'new_position': 14}
+2023-04-26 20:34:33,316:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 1}
+2023-04-26 20:34:33,639:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 15}
+2023-04-26 20:34:34,036:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'L', 'new_position': 2}
+2023-04-26 20:34:34,285:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'I', 'new_position': 14}
+2023-04-26 20:34:34,613:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'K', 'new_position': 1}
+2023-04-26 20:34:34,950:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 7}
+2023-04-26 20:34:35,228:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'I', 'new_position': 2}
+2023-04-26 20:34:35,229:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 20:34:35,509:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'H', 'new_position': 0}
+2023-04-26 20:34:35,847:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 15}, 'gate': 'G', 'new_position': 8}
+2023-04-26 20:34:36,138:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 1}
+2023-04-26 20:34:36,426:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'C', 'new_position': 7}
+2023-04-26 20:34:36,762:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 15}, 'gate': 'D', 'new_position': 2}
+2023-04-26 20:34:37,070:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 6}
+2023-04-26 20:34:37,405:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'D', 'new_position': 1}
+2023-04-26 20:34:37,673:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'D', 'new_position': 13}
+2023-04-26 20:34:37,674:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 20:34:38,017:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'H', 'new_position': 13}
+2023-04-26 20:34:38,481:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'D', 'new_position': 2}
+2023-04-26 20:34:38,700:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 18}, 'gate': 'C', 'new_position': 19}
+2023-04-26 20:34:38,954:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 3}
+2023-04-26 20:34:39,357:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 18}, 'gate': 'E', 'new_position': 5}
+2023-04-26 20:34:39,621:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 2}
+2023-04-26 20:34:39,937:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'H', 'new_position': 12}
+2023-04-26 20:34:40,224:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'B', 'new_position': 9}
+2023-04-26 20:34:40,550:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 19}
+2023-04-26 20:34:40,828:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 2}
+2023-04-26 20:34:41,143:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'I', 'new_position': 18}
+2023-04-26 20:34:41,452:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'B', 'new_position': 9}
+2023-04-26 20:34:41,812:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'K', 'new_position': 17}
+2023-04-26 20:34:42,097:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 16}
+2023-04-26 20:34:42,413:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 18}
+2023-04-26 20:34:42,717:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'D', 'new_position': 9}
+2023-04-26 20:34:42,719:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 20:34:43,056:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 9}
+2023-04-26 20:34:43,350:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 17}
+2023-04-26 20:34:43,655:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 2}
+2023-04-26 20:34:43,986:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'G', 'new_position': 18}
+2023-04-26 20:34:44,306:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 20}, 'gate': 'A', 'new_position': 9}
+2023-04-26 20:34:44,603:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 22}, 'gate': 'C', 'new_position': 25}
+2023-04-26 20:34:44,891:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'B', 'new_position': 16}
+2023-04-26 20:34:45,213:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'D', 'new_position': 18}
+2023-04-26 20:34:45,496:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'C', 'new_position': 9}
+2023-04-26 20:34:45,817:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 19}
+2023-04-26 20:34:46,117:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'K', 'new_position': 16}
+2023-04-26 20:34:46,439:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 18}, 'gate': 'C', 'new_position': 18}
+2023-04-26 20:34:46,736:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 9}
+2023-04-26 20:34:47,032:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'B', 'new_position': 17}
+2023-04-26 20:34:47,335:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'I', 'new_position': 16}
+2023-04-26 20:34:47,634:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 18}
+2023-04-26 20:34:47,925:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 9}
+2023-04-26 20:34:48,243:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 17}
+2023-04-26 20:34:48,573:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 18}, 'gate': 'H', 'new_position': 10}
+2023-04-26 20:34:48,575:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 20:34:48,575:WARNING:Player_2 VS Player_1:Player_1 has done too many Bad Moves
+2023-04-26 20:34:48,575:INFO:Player_2 VS Player_1:Match Done. Player_2 Won

@@ -1,0 +1,26 @@
+2023-04-26 16:18:34,586:INFO:state:State Created
+2023-04-26 16:18:35,533:INFO:server:Game Server For Labyrinthe
+2023-04-26 16:18:35,589:INFO:ui:UI started
+2023-04-26 16:18:36,469:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 16:18:36,487:INFO:championship:Championship Task Started
+2023-04-26 16:18:36,488:INFO:state:State Dumper Started
+2023-04-26 16:18:38,456:INFO:inscription:Subscription received from 192.168.0.138:55165
+2023-04-26 16:18:38,457:INFO:inscription:Pending client: Player_2 (192.168.0.138:2000)
+2023-04-26 16:18:39,518:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-04-26 16:18:41,719:INFO:inscription:Subscription received from 192.168.0.138:55167
+2023-04-26 16:18:41,719:INFO:inscription:Pending client: Player_1 (192.168.0.138:8880)
+2023-04-26 16:18:42,748:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-04-26 16:18:56,946:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:18:59,831:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:19:10,510:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:19:16,460:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:19:23,814:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:19:23,816:INFO:championship:Remaining: 1/2
+2023-04-26 16:19:36,988:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:19:50,158:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:20:03,331:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:20:16,522:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:20:29,672:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:20:42,806:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:20:56,015:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 16:21:09,340:ERROR:network:Unable to Open Connection to 192.168.0.138:8880

@@ -1,0 +1,16 @@
+2023-04-26 18:05:06,599:INFO:Player_2 VS Player_1:Match Started
+2023-04-26 18:05:06,993:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'C', 'new_position': 1}
+2023-04-26 18:05:07,953:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 16}, 'gate': 'J', 'new_position': 41}
+2023-04-26 18:05:07,955:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 18:05:08,061:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 16}, 'gate': 'L', 'new_position': 41}
+2023-04-26 18:05:08,481:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 12}, 'gate': 'I', 'new_position': 0}
+2023-04-26 18:05:08,484:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 18:05:08,830:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 12}, 'gate': 'B', 'new_position': 8}
+2023-04-26 18:05:09,208:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'J', 'new_position': 34}
+2023-04-26 18:05:09,213:WARNING:Player_2 VS Player_1:This is a Bad Move. Your new_position is unreachable
+2023-04-26 18:05:09,380:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'D', 'new_position': 34}
+2023-04-26 18:05:09,864:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 16}, 'gate': 'J', 'new_position': 14}
+2023-04-26 18:05:10,307:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 23}, 'gate': 'K', 'new_position': None}
+2023-04-26 18:05:10,308:WARNING:Player_2 VS Player_1:This is a Bad Move. Invalid new position
+2023-04-26 18:05:10,309:WARNING:Player_2 VS Player_1:Player_1 has done too many Bad Moves
+2023-04-26 18:05:10,321:INFO:Player_2 VS Player_1:Match Done. Player_2 Won

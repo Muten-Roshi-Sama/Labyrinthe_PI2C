@@ -1,0 +1,60 @@
+2023-04-26 16:03:46,463:INFO:state:State Created
+2023-04-26 16:03:46,876:INFO:server:Game Server For Labyrinthe
+2023-04-26 16:03:46,938:INFO:ui:UI started
+2023-04-26 16:03:48,092:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 16:03:48,094:INFO:championship:Championship Task Started
+2023-04-26 16:03:48,096:INFO:state:State Dumper Started
+2023-04-26 16:03:49,692:INFO:inscription:Subscription received from 192.168.0.138:54208
+2023-04-26 16:03:49,694:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 16:03:50,752:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 16:03:54,793:INFO:inscription:Subscription received from 192.168.0.138:54210
+2023-04-26 16:03:54,794:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 16:03:55,844:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 16:04:10,304:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:04:13,340:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:04:23,962:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:04:29,985:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:04:37,348:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:04:37,349:INFO:championship:Remaining: 1/2
+2023-04-26 16:04:50,509:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:05:03,879:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:05:17,098:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:05:30,380:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:05:43,570:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:05:56,665:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:06:09,815:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:06:22,968:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:06:36,075:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:06:49,194:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:07:02,366:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:07:15,486:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:07:28,629:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:07:41,791:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:07:54,929:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:08:08,091:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:08:21,162:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:08:34,285:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:08:47,378:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:09:00,441:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:09:13,562:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:09:26,690:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:09:39,802:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:09:52,869:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:10:06,010:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:10:19,098:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:10:32,235:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:10:45,315:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:10:58,533:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:11:11,665:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:11:24,775:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:11:37,942:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:11:51,112:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:12:04,242:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:12:17,393:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:12:30,573:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:12:43,660:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:12:56,841:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:13:09,964:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:13:23,074:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:13:36,217:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:13:49,313:ERROR:network:Unable to Open Connection to 192.168.0.138:2000

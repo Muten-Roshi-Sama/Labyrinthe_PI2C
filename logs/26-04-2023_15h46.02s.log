@@ -1,0 +1,53 @@
+2023-04-26 15:46:02,885:INFO:state:State Created
+2023-04-26 15:46:03,378:INFO:server:Game Server For Labyrinthe
+2023-04-26 15:46:03,438:INFO:ui:UI started
+2023-04-26 15:46:04,171:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 15:46:04,172:INFO:championship:Championship Task Started
+2023-04-26 15:46:04,173:INFO:state:State Dumper Started
+2023-04-26 15:46:06,856:INFO:inscription:Subscription received from 192.168.0.138:52988
+2023-04-26 15:46:06,856:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 15:46:07,903:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:46:09,158:INFO:inscription:Subscription received from 192.168.0.138:52990
+2023-04-26 15:46:09,158:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:46:10,214:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 15:46:24,542:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:46:27,311:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:46:38,081:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:46:43,945:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:46:51,612:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:46:51,614:INFO:championship:Remaining: 1/2
+2023-04-26 15:47:04,771:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:47:17,917:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:47:31,010:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:47:44,257:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:47:58,000:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:48:11,125:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:48:24,274:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:48:37,416:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:48:50,965:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:49:04,150:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:49:17,306:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:49:30,517:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:49:43,745:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:49:56,883:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:50:10,089:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:50:23,355:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:50:36,642:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:50:49,825:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:51:02,977:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:51:16,141:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:51:29,353:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:51:42,592:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:51:55,870:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:52:09,144:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:52:22,433:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:52:35,638:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:52:48,808:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:53:02,071:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:53:15,290:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:53:28,902:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:53:42,479:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:53:55,708:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:54:09,275:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:54:22,554:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:54:36,220:ERROR:network:Unable to Open Connection to 192.168.0.138:8880

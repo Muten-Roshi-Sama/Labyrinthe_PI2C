@@ -1,0 +1,23 @@
+2023-04-26 16:01:41,930:INFO:state:State Created
+2023-04-26 16:01:42,452:INFO:server:Game Server For Labyrinthe
+2023-04-26 16:01:42,507:INFO:ui:UI started
+2023-04-26 16:01:43,403:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 16:01:43,404:INFO:championship:Championship Task Started
+2023-04-26 16:01:43,405:INFO:state:State Dumper Started
+2023-04-26 16:01:44,497:INFO:inscription:Subscription received from 192.168.0.138:54056
+2023-04-26 16:01:44,498:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 16:01:45,557:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 16:01:46,934:INFO:inscription:Subscription received from 192.168.0.138:54058
+2023-04-26 16:01:46,935:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 16:01:47,977:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 16:02:02,322:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:02:05,347:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:02:15,697:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:02:21,611:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:02:28,958:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:02:28,960:INFO:championship:Remaining: 1/2
+2023-04-26 16:02:42,178:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:02:56,212:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:03:10,217:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:03:23,449:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 16:03:37,006:ERROR:network:Unable to Open Connection to 192.168.0.138:2000

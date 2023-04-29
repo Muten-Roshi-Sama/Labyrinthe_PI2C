@@ -1,0 +1,8 @@
+2023-04-29 13:58:06,048:INFO:state:State Created
+2023-04-29 13:58:06,622:INFO:server:Game Server For Labyrinthe
+2023-04-29 13:58:06,710:INFO:ui:UI started
+2023-04-29 13:58:07,888:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-29 13:58:07,888:INFO:championship:Championship Task Started
+2023-04-29 13:58:07,889:INFO:state:State Dumper Started
+2023-04-29 13:58:27,034:INFO:server:Championship Task Stopped
+2023-04-29 13:58:27,035:INFO:server:State Dumper Task Stopped

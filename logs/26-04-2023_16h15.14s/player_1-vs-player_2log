@@ -1,0 +1,4 @@
+2023-04-26 16:15:22,342:INFO:Player_1 VS Player_2:Match Started
+2023-04-26 16:15:22,738:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 16:15:39,586:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 192.168.0.138:8880). Wait for 3 seconds
+2023-04-26 16:15:56,922:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 192.168.0.138:8880). Wait for 3 seconds

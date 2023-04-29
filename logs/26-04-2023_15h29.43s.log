@@ -1,0 +1,80 @@
+2023-04-26 15:29:43,696:INFO:state:State Created
+2023-04-26 15:29:44,452:INFO:server:Game Server For Labyrinthe
+2023-04-26 15:29:44,530:INFO:ui:UI started
+2023-04-26 15:29:45,385:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 15:29:45,386:INFO:championship:Championship Task Started
+2023-04-26 15:29:45,388:INFO:state:State Dumper Started
+2023-04-26 15:30:04,425:INFO:inscription:Subscription received from 192.168.0.138:51630
+2023-04-26 15:30:04,426:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:30:05,472:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 15:30:16,725:INFO:inscription:Subscription received from 192.168.0.138:51636
+2023-04-26 15:30:16,726:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 15:30:17,813:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:30:32,254:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 15:30:35,253:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 15:30:45,749:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 15:30:51,919:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 15:30:59,314:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 15:30:59,321:INFO:championship:Remaining: 1/2
+2023-04-26 15:31:12,600:ERROR:network:Unable to Open Connection to 192.168.0.138:2000
+2023-04-26 15:31:20,742:INFO:inscription:Subscription received from 192.168.0.138:51723
+2023-04-26 15:31:20,742:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 15:31:21,777:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:31:25,033:INFO:inscription:Subscription received from 192.168.0.138:51732
+2023-04-26 15:31:25,034:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:31:39,359:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:31:39,465:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:31:42,174:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:31:52,677:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:31:58,388:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:32:05,925:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:32:05,930:INFO:championship:Remaining: 0/2
+2023-04-26 15:32:19,730:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:32:32,834:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:32:45,899:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:32:59,011:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:33:12,169:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:33:25,331:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:33:38,411:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:33:52,164:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:34:06,034:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:34:19,172:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:34:32,351:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:34:45,711:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:34:59,610:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:35:05,205:INFO:inscription:Subscription received from 192.168.0.138:52036
+2023-04-26 15:35:05,205:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:35:06,196:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 15:35:13,022:INFO:state:Match Giorgio VS BobbyChapman Reset
+2023-04-26 15:35:13,023:INFO:state:Match BobbyChapman VS Giorgio Reset
+2023-04-26 15:35:13,023:INFO:state:Client Giorgio Removed
+2023-04-26 15:35:14,177:INFO:state:Client BobbyChapman Removed
+2023-04-26 15:35:20,456:INFO:inscription:Subscription received from 192.168.0.138:52041
+2023-04-26 15:35:20,456:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 15:35:21,548:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:35:23,086:INFO:inscription:Subscription received from 192.168.0.138:52043
+2023-04-26 15:35:23,087:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:35:24,115:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 15:35:38,276:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:35:41,128:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:35:51,785:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:35:57,886:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:36:05,385:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:36:05,403:INFO:championship:Remaining: 1/2
+2023-04-26 15:36:18,567:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:36:31,670:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:36:44,832:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:36:58,147:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:37:11,257:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:37:22,451:INFO:state:Match BobbyChapman VS Giorgio Reset
+2023-04-26 15:37:22,452:INFO:state:Client Giorgio Removed
+2023-04-26 15:37:23,319:INFO:state:Client BobbyChapman Removed
+2023-04-26 15:37:24,520:ERROR:network:Unable to Open Connection to 192.168.0.138:8880
+2023-04-26 15:37:28,505:INFO:inscription:Subscription received from 192.168.0.138:52189
+2023-04-26 15:37:28,506:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 15:37:29,537:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:37:33,441:INFO:inscription:Subscription received from 192.168.0.138:52191
+2023-04-26 15:37:33,441:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:37:34,505:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 15:38:11,298:INFO:server:Championship Task Stopped
+2023-04-26 15:38:11,299:INFO:server:State Dumper Task Stopped

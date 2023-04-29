@@ -12,7 +12,7 @@ import random
 
 #GIT : /OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
 
-
+# C:/Users/vassi/OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
 
 #-----Variables----------
 player = 1
@@ -79,7 +79,6 @@ def main():
                     # print(BFS(state["positions"][0]))
 
                 elif message == "play":            #TODO
-                    # print()
                     lives = req["lives"]
                     error_list = req["errors"]
                     print("ERRORS : ", error_list)
@@ -91,7 +90,11 @@ def main():
                     #-------------
                     #
                     tile = state["tile"]
-                    moves = successors(my_index, state)
+
+                    chosen_gate = random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L"])
+                    move_gate = {"tile": tile, "gate": chosen_gate}
+                    new_state = next(state, move_gate)
+                    moves = successors(my_index, new_state)
                     print("moves = ",moves)
                     #
                     if len(moves) == 1:  # if seq contains 0 or 1 element
@@ -103,11 +106,12 @@ def main():
                     #
                     # print(state["board"])
                     #
-                    chosen_move = {"tile": tile, "gate": random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L"]),
-                                    "new_position": random_move}
+                    chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": random_move}
+
                     print("chosen_move = ", chosen_move["new_position"])
                     print()
                     client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
+                
                 
         except socket.timeout:
             pass
@@ -228,9 +232,6 @@ def add(A, B):
 
 
 
-
-
-
 #---------LEVEL_3--------------------
 """Moving and AI path """
 
@@ -248,6 +249,88 @@ def successors(index, state):
                 if next_tile[opposite_dir]:
                     res.append(coords2index(*coords))
     return res
+
+
+
+
+
+
+
+def next(state, move):
+        new_state = copy.deepcopy(state)
+
+        new_board, new_free = slideTiles(state["board"], move["tile"], move["gate"])
+        new_state["board"] = new_board
+        new_state["tile"] = new_free
+
+        new_positions = []
+        for position in state["positions"]:
+            if onTrack(position, move["gate"]):
+                if position == GATES[move["gate"]]["end"]:
+                    new_positions.append(GATES[move["gate"]]["start"])
+                    continue
+                new_positions.append(position + GATES[move["gate"]]["inc"])
+                continue
+            new_positions.append(position)
+
+        new_state["positions"] = new_positions
+
+        # if (
+        #     path(
+        #         new_state["positions"][state["current"]],
+        #         move["new_position"],
+        #         new_state["board"],
+        #     )
+        #     is None
+        # ):
+        #     raise game.BadMove("Your new_position is unreachable")
+
+        # new_state["positions"][state["current"]] = move["new_position"]
+
+        # if (
+        #     new_state["board"][new_state["positions"][state["current"]]]["item"]
+        #     == targets[state["current"]][-1]
+        # ):
+        #     targets[state["current"]].pop()
+        #     if len(targets[state["current"]]) == 0:
+        #         new_state["remaining"] = 0
+        #         new_state["target"] = None
+        #         raise game.GameWin(state["current"], new_state)
+
+        # new_state["current"] = (new_state["current"] + 1) % 2
+
+        # new_state["target"] = targets[new_state["current"]][-1]
+        # new_state["remaining"] = [len(trg) for trg in targets]
+
+        return new_state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #--------------RUN-------------------

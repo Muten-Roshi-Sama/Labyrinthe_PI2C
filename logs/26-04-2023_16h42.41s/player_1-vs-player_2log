@@ -1,0 +1,35 @@
+2023-04-26 16:42:48,784:INFO:Player_1 VS Player_2:Match Started
+2023-04-26 16:42:49,344:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 16:43:06,131:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 192.168.0.138:8880). Wait for 3 seconds
+2023-04-26 16:43:21,219:INFO:Player_1 VS Player_2:Match Started
+2023-04-26 16:43:21,219:INFO:Player_1 VS Player_2:Match Started
+2023-04-26 16:43:21,646:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 15}, 'gate': 'A', 'new_position': 1}
+2023-04-26 16:43:21,646:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 15}, 'gate': 'A', 'new_position': 1}
+2023-04-26 16:43:21,954:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 14}, 'gate': 'I', 'new_position': 41}
+2023-04-26 16:43:21,954:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 14}, 'gate': 'I', 'new_position': 41}
+2023-04-26 16:43:21,958:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:21,958:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:22,264:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 14}, 'gate': 'E', 'new_position': 47}
+2023-04-26 16:43:22,264:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 14}, 'gate': 'E', 'new_position': 47}
+2023-04-26 16:43:22,545:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'L', 'new_position': 0}
+2023-04-26 16:43:22,545:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'L', 'new_position': 0}
+2023-04-26 16:43:22,831:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 48}
+2023-04-26 16:43:22,831:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 48}
+2023-04-26 16:43:23,226:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 13}, 'gate': 'E', 'new_position': 7}
+2023-04-26 16:43:23,226:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 13}, 'gate': 'E', 'new_position': 7}
+2023-04-26 16:43:23,230:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:23,230:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:23,492:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 13}, 'gate': 'G', 'new_position': 1}
+2023-04-26 16:43:23,492:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 13}, 'gate': 'G', 'new_position': 1}
+2023-04-26 16:43:23,879:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'D', 'new_position': 41}
+2023-04-26 16:43:23,879:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'D', 'new_position': 41}
+2023-04-26 16:43:23,881:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:23,881:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:24,150:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 41}
+2023-04-26 16:43:24,150:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 41}
+2023-04-26 16:43:24,151:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:24,151:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-04-26 16:43:24,153:WARNING:Player_1 VS Player_2:Player_2 has done too many Bad Moves
+2023-04-26 16:43:24,153:WARNING:Player_1 VS Player_2:Player_2 has done too many Bad Moves
+2023-04-26 16:43:24,158:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-04-26 16:43:24,158:INFO:Player_1 VS Player_2:Match Done. Player_1 Won

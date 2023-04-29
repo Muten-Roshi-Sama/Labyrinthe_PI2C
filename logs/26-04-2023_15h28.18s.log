@@ -1,0 +1,24 @@
+2023-04-26 15:28:18,926:INFO:state:State Created
+2023-04-26 15:28:19,399:INFO:server:Game Server For Labyrinthe
+2023-04-26 15:28:19,512:INFO:ui:UI started
+2023-04-26 15:28:20,682:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-04-26 15:28:20,682:INFO:championship:Championship Task Started
+2023-04-26 15:28:20,683:INFO:state:State Dumper Started
+2023-04-26 15:28:28,620:INFO:inscription:Subscription received from 192.168.0.138:51532
+2023-04-26 15:28:28,621:INFO:inscription:Pending client: BobbyChapman (192.168.0.138:8880)
+2023-04-26 15:28:29,655:INFO:inscription:Client 'BobbyChapman' Fully Subscribed
+2023-04-26 15:28:44,274:INFO:inscription:Subscription received from 127.0.0.1:51540
+2023-04-26 15:28:44,275:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 15:28:45,341:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:28:59,275:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 15:29:02,344:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 15:29:04,303:INFO:inscription:Subscription received from 127.0.0.1:51572
+2023-04-26 15:29:04,303:INFO:inscription:Pending client: Giorgio (127.0.0.1:2000)
+2023-04-26 15:29:05,389:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:29:19,018:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-04-26 15:29:19,026:INFO:championship:Remaining: 1/2
+2023-04-26 15:29:27,191:INFO:inscription:Subscription received from 192.168.0.138:51605
+2023-04-26 15:29:27,192:INFO:inscription:Pending client: Giorgio (192.168.0.138:2000)
+2023-04-26 15:29:28,236:INFO:inscription:Client 'Giorgio' Fully Subscribed
+2023-04-26 15:29:35,553:INFO:server:Championship Task Stopped
+2023-04-26 15:29:35,571:INFO:server:State Dumper Task Stopped

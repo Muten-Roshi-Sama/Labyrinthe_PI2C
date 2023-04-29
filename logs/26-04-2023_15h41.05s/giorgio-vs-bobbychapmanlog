@@ -1,0 +1,19 @@
+2023-04-26 15:42:14,379:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 15:42:14,795:DEBUG:Giorgio VS BobbyChapman:Giorgio play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 7}
+2023-04-26 15:42:15,240:WARNING:Giorgio VS BobbyChapman:BobbyChapman unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:42:32,258:WARNING:Giorgio VS BobbyChapman:BobbyChapman unavailable (Unable to Open Connection to 192.168.0.138:8880). Wait for 3 seconds
+2023-04-26 15:42:48,902:WARNING:Giorgio VS BobbyChapman:BobbyChapman unavailable (Unable to Open Connection to 192.168.0.138:8880). Wait for 3 seconds
+2023-04-26 15:42:51,901:WARNING:Giorgio VS BobbyChapman:BobbyChapman has done too many Bad Moves
+2023-04-26 15:42:51,901:INFO:Giorgio VS BobbyChapman:Match Done. Giorgio Won
+2023-04-26 15:44:00,001:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 15:44:00,001:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 15:44:00,374:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:44:00,374:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:44:08,779:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:44:08,779:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:45:02,859:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 15:45:02,859:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 15:45:02,859:INFO:Giorgio VS BobbyChapman:Match Started
+2023-04-26 15:45:03,313:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:45:03,313:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 15:45:03,313:WARNING:Giorgio VS BobbyChapman:Giorgio unavailable (Distant socket closed). Wait for 3 seconds

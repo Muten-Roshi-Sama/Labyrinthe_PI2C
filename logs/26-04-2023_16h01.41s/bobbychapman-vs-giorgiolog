@@ -1,0 +1,7 @@
+2023-04-26 16:01:48,167:INFO:BobbyChapman VS Giorgio:Match Started
+2023-04-26 16:01:48,545:DEBUG:BobbyChapman VS Giorgio:BobbyChapman play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 19}, 'gate': 'L', 'new_position': 7}
+2023-04-26 16:01:48,884:WARNING:BobbyChapman VS Giorgio:Giorgio unavailable (Distant socket closed). Wait for 3 seconds
+2023-04-26 16:02:05,347:WARNING:BobbyChapman VS Giorgio:Giorgio unavailable (Unable to Open Connection to 192.168.0.138:2000). Wait for 3 seconds
+2023-04-26 16:02:21,612:WARNING:BobbyChapman VS Giorgio:Giorgio unavailable (Unable to Open Connection to 192.168.0.138:2000). Wait for 3 seconds
+2023-04-26 16:02:24,635:WARNING:BobbyChapman VS Giorgio:Giorgio has done too many Bad Moves
+2023-04-26 16:02:24,640:INFO:BobbyChapman VS Giorgio:Match Done. BobbyChapman Won
