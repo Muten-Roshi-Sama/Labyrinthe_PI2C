@@ -10,3 +10,5 @@
 2023-04-29 16:38:07,548:INFO:inscription:Subscription received from 127.0.0.1:61607
 2023-04-29 16:38:07,581:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
 2023-04-29 16:38:08,663:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-04-29 16:39:57,410:INFO:championship:Remaining: 1/2
+2023-04-29 16:41:56,071:INFO:championship:Remaining: 0/2

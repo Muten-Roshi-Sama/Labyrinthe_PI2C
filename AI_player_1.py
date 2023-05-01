@@ -21,6 +21,7 @@ if player == 1:
     player_name = "Player_1"
     request_port = 8880
     Matricules = ["1000", "2000"]
+
 elif player == 2 :
     player_name = "Player_2"
     request_port = 2000
@@ -320,19 +321,6 @@ def next(state, move):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #--------------RUN-------------------
 
 while __name__ == '__main__':
@@ -364,19 +352,23 @@ class PriorityQueue:
 
 
 
-def BestFS(start,successors, goals, heuristic, state):
+def BestFS(start,successors, heuristic, state):
+    """next, heuristic, time_out, """
+    index = state['current']
+    current_pos = state["positions"][index]
     q = PriorityQueue()
     parent = {}
     parent[start] = None
     q.enqueue(start, heuristic(start))
     while not q.isEmpty():
         node = q.dequeue()
-        if path(state["positions"][0], state["target"], node, successors):
-            break
+        is_path = path(current_pos, state["target"], node, successors)
+        if is_path:
+            return list(reversed(is_path))
         for successor in successors(node):
             if successor not in parent:
                 parent[successor] = node
-                q.enqueue(successor, heuristic(successor))
+                q.enqueue(successor, heuristic(successor)) #but successors gives a list ?
         node = None
 
     res = []
@@ -387,6 +379,18 @@ def BestFS(start,successors, goals, heuristic, state):
     return list(reversed(res))  
 
 
+
+def path(start, end, board, successors):
+    try:
+        res = BestFS(start, successors, [end])
+        print(res)
+        return res
+    except IndexError:
+        return None
+
+
+
+
 def manhattan_distance(current_pos, goal_pos):
     """
     Calculate the Manhattan distance heuristic between current_pos and goal_pos.
@@ -395,5 +399,11 @@ def manhattan_distance(current_pos, goal_pos):
 
 
 
-"""Heuristic: maximiser les nombre de tresors auquels j'ai acces et minimiser ceux de l'adversaire"""
+"""Heuristic: maximiser les nombre de tresors auquels j'ai acces et minimiser ceux de l'adversaire
+
+Calculer le nombre de murs quui nous separent du trésor
+
+if enough time, use ressources to simulate other player's path without hindering our own goal
+
+"""
 
