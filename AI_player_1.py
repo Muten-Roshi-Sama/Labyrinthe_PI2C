@@ -8,6 +8,8 @@ import copy
 from collections import deque
 import time as time
 import random
+import math 
+import heapq
 
 
 #GIT : /OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
@@ -21,7 +23,6 @@ if player == 1:
     player_name = "Player_1"
     request_port = 8880
     Matricules = ["1000", "2000"]
-
 elif player == 2 :
     player_name = "Player_2"
     request_port = 2000
@@ -92,22 +93,23 @@ def main():
                     #
                     tile = state["tile"]
 
-                    chosen_gate = random.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L"])
+                    chosen_gate = best_first_choice.choice(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K","L"])
                     move_gate = {"tile": tile, "gate": chosen_gate}
                     new_state = next(state, move_gate)
                     moves = successors(my_index, new_state)
                     print("moves = ",moves)
                     #
+
                     if len(moves) == 1:  # if seq contains 0 or 1 element
-                        random_move = moves[0] if moves else None  # select the first element, or None if seq is empty
+                        chosen_move = moves[0] if moves else None  # select the first element, or None if seq is empty
                     elif moves == []:
-                        random_move = current_pos
+                        chosen_move = current_pos
                     else:
-                        random_move = random.choice(moves)
+                        chosen_move = best_first_choice(moves, state, pos_tresor) #remplacer pos_tresor par le nom adapter
                     #
                     # print(state["board"])
                     #
-                    chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": random_move}
+                    chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
 
                     print("chosen_move = ", chosen_move["new_position"])
                     print()
@@ -308,19 +310,6 @@ def next(state, move):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #--------------RUN-------------------
 
 while __name__ == '__main__':
@@ -335,75 +324,55 @@ while __name__ == '__main__':
 
 #-----------Temporary_Storage-----------------
 
-class PriorityQueue:
-	def __init__(self):
-		self.data = []
+def a_star(state, start, goal):
+    """A* algorithm to find the shortest path between two positions"""
+    frontier = [(0, start)]
+    came_from = {start: None}
+    cost_so_far = {start: 0}
+    distance = []
+    while frontier:
+        _, current = heapq.heappop(frontier)
 
-	def enqueue(self, value, priority):
-		# Could be better
-		self.data.append({'value': value, 'priority': priority})
-		self.data.sort(key=lambda elem: elem['priority'])
+        if current == goal:
+            break
+        for next_pos in successors(current, state):
+            new_cost = cost_so_far[current] + 1  # assuming all moves have the same cost
+            if next_pos not in cost_so_far or new_cost < cost_so_far[next_pos]:
+                cost_so_far[next_pos] = new_cost
+                priority = new_cost + distance(next_pos, goal)
+                heapq.heappush(frontier, (priority, next_pos))
+                came_from[next_pos] = current
 
-	def dequeue(self):
-		return self.data.pop(0)['value']
+    path = []
+    pos = goal
+    while pos != start:
+        path.append(pos)
+        pos = came_from[pos]
+    path.append(start)
+    path.reverse()
 
-	def isEmpty(self):
-		return len(self.data) == 0
+    return path
 
+def evaluate_move(state, move):
+    current_pos = state["positions"][state["current"]]
+    goal_pos = move["new_position"]
+    path = a_star(state, current_pos, goal_pos)
+    return -len(path)  # negative because we want the shortest path to have a higher score
 
-
-def BestFS(start,successors, heuristic, state):
-    """next, heuristic, time_out, """
-    index = state['current']
-    current_pos = state["positions"][index]
-    q = PriorityQueue()
-    parent = {}
-    parent[start] = None
-    q.enqueue(start, heuristic(start))
-    while not q.isEmpty():
-        node = q.dequeue()
-        is_path = path(current_pos, state["target"], node, successors)
-        if is_path:
-            return list(reversed(is_path))
-        for successor in successors(node):
-            if successor not in parent:
-                parent[successor] = node
-                q.enqueue(successor, heuristic(successor)) #but successors gives a list ?
-        node = None
-
-    res = []
-    while node is not None:
-        res.append(node)
-        node = parent[node]
-
-    return list(reversed(res))  
-
-
-
-def path(start, end, board, successors):
-    try:
-        res = BestFS(start, successors, [end])
-        print(res)
-        return res
-    except IndexError:
-        return None
+def best_first_choice(state, moves, treasure_pos):
+    my_index = state["current"]
+    current_pos = state["positions"][my_index]
+    best_move = None
+    best_score = -float('inf')
+    for move in moves:
+        new_pos = tuple(map(sum, zip(current_pos, move)))
+        distance = math.sqrt((new_pos[0] - treasure_pos[0])**2 + (new_pos[1] - treasure_pos[1])**2)
+        score = -distance  # negative because we want the shortest distance to have a higher score
+        if score > best_score:
+            best_move = move
+            best_score = score
+    return best_move
 
 
 
-
-def manhattan_distance(current_pos, goal_pos):
-    """
-    Calculate the Manhattan distance heuristic between current_pos and goal_pos.
-    """
-    return abs(current_pos[0] - goal_pos[0]) + abs(current_pos[1] - goal_pos[1])
-
-
-
-"""Heuristic: maximiser les nombre de tresors auquels j'ai acces et minimiser ceux de l'adversaire
-
-Calculer le nombre de murs quui nous separent du trésor
-
-if enough time, use ressources to simulate other player's path without hindering our own goal
-
-"""
 
