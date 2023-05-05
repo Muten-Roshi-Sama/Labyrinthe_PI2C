@@ -1,0 +1,3 @@
+2023-05-05 18:43:11,416:INFO:Player_2 VS Player_1:Match Started
+2023-05-05 18:43:12,589:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 2}
+2023-05-05 18:43:16,225:WARNING:Player_2 VS Player_1:Player_1 unavailable (). Wait for 3 seconds

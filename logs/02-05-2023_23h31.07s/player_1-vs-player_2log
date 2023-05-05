@@ -1,0 +1,18 @@
+2023-05-02 23:32:09,701:INFO:Player_1 VS Player_2:Match Started
+2023-05-02 23:32:10,141:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:13,375:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:16,530:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:19,525:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-02 23:32:19,528:INFO:Player_1 VS Player_2:Match Done. Player_2 Won
+2023-05-02 23:32:43,447:INFO:Player_1 VS Player_2:Match Started
+2023-05-02 23:32:43,447:INFO:Player_1 VS Player_2:Match Started
+2023-05-02 23:32:43,883:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:43,883:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:47,539:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:47,539:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:33:05,017:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-02 23:33:05,017:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-02 23:33:08,131:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-02 23:33:08,131:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-02 23:33:08,134:INFO:Player_1 VS Player_2:Match Done. Player_2 Won
+2023-05-02 23:33:08,134:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

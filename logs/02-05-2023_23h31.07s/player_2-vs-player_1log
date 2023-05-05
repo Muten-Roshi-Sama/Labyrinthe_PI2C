@@ -1,0 +1,19 @@
+2023-05-02 23:31:24,561:INFO:Player_2 VS Player_1:Match Started
+2023-05-02 23:31:25,141:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'D', 'new_position': 7}
+2023-05-02 23:31:25,541:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:31:42,661:WARNING:Player_2 VS Player_1:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-02 23:31:59,531:WARNING:Player_2 VS Player_1:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-02 23:32:19,796:INFO:Player_2 VS Player_1:Match Started
+2023-05-02 23:32:19,796:INFO:Player_2 VS Player_1:Match Started
+2023-05-02 23:32:20,425:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'G', 'new_position': 7}
+2023-05-02 23:32:20,425:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 16}, 'gate': 'G', 'new_position': 7}
+2023-05-02 23:32:20,639:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:20,639:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:23,805:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:23,805:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:27,034:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:27,034:WARNING:Player_2 VS Player_1:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-02 23:32:30,058:WARNING:Player_2 VS Player_1:Player_1 has done too many Bad Moves
+2023-05-02 23:32:30,058:WARNING:Player_2 VS Player_1:Player_1 has done too many Bad Moves
+2023-05-02 23:32:30,060:INFO:Player_2 VS Player_1:Match Done. Player_2 Won
+2023-05-02 23:32:30,060:INFO:Player_2 VS Player_1:Match Done. Player_2 Won
