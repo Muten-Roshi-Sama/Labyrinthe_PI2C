@@ -16,6 +16,20 @@ import heapq
 
 # C:/Users/vassi/OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
 
+
+#----------------------------
+#TODO:
+"""
+-debug fetch error when connecting to server
+-debugging when remaining on the same tile. res = []
+-add timeout to find_best_move() of 2900ms
+
+"""
+
+
+
+
+
 #-----Variables----------
 player = 1
 
@@ -117,7 +131,8 @@ def main():
 
 
 #-----------------LEVEL_2------------------- 
-"""Operator functions"""
+"""_______Operator functions_________"""
+
 
 GATES = {
     "A": {"start": 1, "end": 43, "inc": 7},
@@ -199,10 +214,7 @@ def add(A, B):
 #-------------LEVEL_3--------------------------
 """_______MY_Operator functions_________"""
 
-def tile_finder(tile, state):
-    board = state["board"]  # board is a LIST of dictionnaries
-    return board.index(tile)
-        
+
 def target_finder(state):
     target_ID = state["target"]
     board = state["board"]
@@ -211,7 +223,7 @@ def target_finder(state):
             return board.index(i)
     print('Could not find target')
 
-def possible_orientations(tile):
+def possible_orientations(tile):   #TODO use tuple to erase dubbles. 
     """Generate all possible orientations of a given tile.{'N': False, 'E': True, 'S': True, 'W': False, 'item': None}"""
     res = []
     new_tile = tile
@@ -239,8 +251,6 @@ def successors(state, index):
     """Check all possible movements starting from the index of the tile."""
     res = []
     board = state['board']
-    # tile = board[index]
-    # tile_ID = tile_finder(tile, state)
     print('current tile = ', index)
     for direction in ["N", "S", "E", "W"]:
         # print("current_tile : ",)  # direction, " = ", board[index][direction]
@@ -359,7 +369,7 @@ def BestFS(start, state, successors, target_tile, heuristic):
         # print('node = ', node)
         # print('target_tile = ', target_tile)
         if node == target_tile:
-            return (node, None, True) #TODO(best_move, heuristic, path_to_target)
+            return (node, None)
         for successor in successors(state, index=node): #for move in possible_moves_list (given by the successors function)
             if successor not in parent: #checks if node has already been visited
                 parent[successor] = node  #adds it to the parent dictionary, 
@@ -376,7 +386,7 @@ def BestFS(start, state, successors, target_tile, heuristic):
 
     Best_tile = Best['value']
     Priority = Best['priority']
-    return (Best_tile, Priority, False)
+    return (Best_tile, Priority)
 
 
 @timeit
@@ -386,6 +396,7 @@ def find_best_move(start, state, successors, target_tile, heuristic):
     """
     res = []
     best = {'choice': None, 'priority': 9999}
+
     for chosen_gate in GATES.keys():
         tile_to_insert = state['tile']  #the RAW tile we have just received
         for tile in possible_orientations(tile_to_insert):

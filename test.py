@@ -11,7 +11,13 @@ import time as time
 import random
 
 #----------------------------
+"""
+-implement timeout at 3000ms
+-debug fetch error when connecting to server
 
+
+
+"""
 
 #-----------------LEVEL_1------------------- 
 """_______Operator functions_________"""
@@ -258,7 +264,6 @@ def BestFS(start, state, successors, target_tile, heuristic):
         node : also an index
         parent = {tile : parent_of tile}
     """
-    Best = []
     q = PriorityQueue()  #stores the nodes to be visited
     parent = {}  # stores the parent nodes of each visited node
     parent[start] = None
@@ -266,17 +271,15 @@ def BestFS(start, state, successors, target_tile, heuristic):
 
     while not q.isEmpty():
         node = q.dequeue() # dequeues the node with the LOWEST priority from the priority queue
-        # print('node = ', node)
-        # print('target_tile = ', target_tile)
         if node == target_tile:
-            return (node, None, True) #TODO(best_move, heuristic, path_to_target)
+            return (node, None, True)  #TODO TRUE ??
         for successor in successors(state, index=node): #for move in possible_moves_list (given by the successors function)
             if successor not in parent: #checks if node has already been visited
                 parent[successor] = node  #adds it to the parent dictionary, 
                 q.enqueue(successor, heuristic(successor, target_tile))
                 q.add_to_historic(successor, heuristic(successor, target_tile))
-                print('Priority list = ')
-                q.show_list()
+                # print('Priority list = ')
+                # q.show_list()
         node = None
 
     Best = {'value': None, 'priority': 9999}
@@ -364,4 +367,34 @@ find_best_move(current_pos, state, successors, my_target, manhattan_distance)
 
 # showBoard(new_board)
 
+"""
+###|# #|###|# #|###|# #|###|
+#  |   | A |#T | B |# #|  #|
+# #|###|# #|###|# #|# #|# #|
+----------------------------
+###|###|# #|###|###|###|# #|
+#  | P#| W |  #|   |   | Q#|
+# #|# #|###|# #|###|###|###|
+----------------------------
+# #|# #|# #|# #|###|# #|# #|
+#C |# #|#D | S | E |  #| F#|
+# #|# #|# #|###|# #|###|# #|
+----------------------------
+###|# #|###|###|# #|# #|# #|
+   |  #|#  | V |#O |#  | U |
+###|###|# #|# #|###|###|###|
+----------------------------
+# #|# #|# #|###|# #|###|# #|
+#G |#M | H | R#| I#|   | J#|
+# #|###|###|# #|# #|###|# #|
+----------------------------
+# #|# #|# #|# #|###|# #|###|
+  #|# #|# #|# #|#  |# #|  #|
+###|# #|# #|# #|# #|# #|# #|
+----------------------------
+# #|###|# #|###|# #|###|# #|
+#  |   | K | N#| L | X |  #|
+###|###|###|# #|###|# #|###|
+#---------------------------
 
+"""
