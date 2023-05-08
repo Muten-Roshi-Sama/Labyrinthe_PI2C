@@ -16,6 +16,7 @@ import heapq
 
 # C:/Users/vassi/OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
 
+# C:\Users\MediaMonster\OneDrive\Bureau\Labyrinthe_PI2C
 
 #----------------------------
 #TODO:
@@ -233,15 +234,18 @@ def possible_orientations(tile):   #TODO use tuple to erase dubbles.
         new_tile = turn_tile(tile)
     return res
 
+def timeit(milisec):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            start_time = time.time()
+            result = func(*args, **kwargs)
+            end_time = time.time()
+            if (end_time - start_time) > milisec: #si le temps d'execution est sup a elui imposé dans la variable "milisec"
+                print(f"{func.find_best_move} took {(end_time - start_time)/1000} seconds.")
+            return result
+        return wrapper
+    return decorator
 
-def timeit(func):
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
-        result = func(*args, **kwargs)
-        end_time = time.time()
-        print(f"{func.__name__} took {end_time - start_time} seconds.")
-        return result
-    return wrapper
 
 
 #-------------LEVEL_4--------------------------
@@ -389,7 +393,7 @@ def BestFS(start, state, successors, target_tile, heuristic):
     return (Best_tile, Priority)
 
 
-@timeit
+@timeit(2950)
 def find_best_move(start, state, successors, target_tile, heuristic):
     """Call BestFS for all possible gate placements and tile orientations,
         returns a path to target if not the path with the best priority.
@@ -480,4 +484,4 @@ def best_first_choice(state, moves, treasure_pos):
 
 
 
-#--------------------------------------------------
+#-------------------------------------------------
