@@ -234,19 +234,6 @@ def possible_orientations(tile):   #TODO use tuple to erase dubbles.
         new_tile = turn_tile(tile)
     return res
 
-def timeit(milisec):
-    def decorator(func):
-        def wrapper(*args, **kwargs):
-            start_time = time.time()
-            result = func(*args, **kwargs)
-            end_time = time.time()
-            if (end_time - start_time) > milisec: #si le temps d'execution est sup a elui imposé dans la variable "milisec"
-                print(f"{func.find_best_move} took {(end_time - start_time)/1000} seconds.")
-            return result
-        return wrapper
-    return decorator
-
-
 
 #-------------LEVEL_4--------------------------
 """_______Main_functions_________"""
@@ -393,28 +380,32 @@ def BestFS(start, state, successors, target_tile, heuristic):
     return (Best_tile, Priority)
 
 
-@timeit(2950)
+
 def find_best_move(start, state, successors, target_tile, heuristic):
     """Call BestFS for all possible gate placements and tile orientations,
         returns a path to target if not the path with the best priority.
     """
+    start_time=time.time()
     res = []
     best = {'choice': None, 'priority': 9999}
-
-    for chosen_gate in GATES.keys():
-        tile_to_insert = state['tile']  #the RAW tile we have just received
-        for tile in possible_orientations(tile_to_insert):
-            new_board = next(state, move={"tile": tile, "gate": chosen_gate})
-            chosen_move = BestFS(start, state, successors, target_tile, heuristic)   #returns (chosen_tile=7 , priority=1, path_to_target=True)
-            choice = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move[0]}
-            res.append({'choice': choice, 'priority': chosen_move[1]})
+    while True:
+        for chosen_gate in GATES.keys():
+            tile_to_insert = state['tile']  #the RAW tile we have just received
+            for tile in possible_orientations(tile_to_insert):
+                new_board = next(state, move={"tile": tile, "gate": chosen_gate})
+                chosen_move = BestFS(start, state, successors, target_tile, heuristic)   #returns (chosen_tile=7 , priority=1, path_to_target=True)
+                choice = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move[0]}
+                res.append({'choice': choice, 'priority': chosen_move[1]})
+            
+            for i in res:
+                if i['priority'] <= best['priority']:
+                    best = i
+            
+            print(best['choice'] )
+            return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
         
-        for i in res:
-            if i['priority'] <= best['priority']:
-                best = i
-    print(best['choice'] )
-    return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
-
+        if time.time() - start_time > 3:
+            raise Exception("Temps imparti dépassé")
 
 
 
