@@ -45,7 +45,7 @@ elif player == 2 :
 
 
 max_recv_length = 10000
-timeout = 3000 #milliseconds
+timeout = 2.95 #milliseconds
 serverAddress = ('localhost', 3000) 
 
 
@@ -388,7 +388,7 @@ def find_best_move(start, state, successors, target_tile, heuristic):
     start_time=time.time()
     res = []
     best = {'choice': None, 'priority': 9999}
-    while True:
+    while time.time() - start_time > timeout:
         for chosen_gate in GATES.keys():
             tile_to_insert = state['tile']  #the RAW tile we have just received
             for tile in possible_orientations(tile_to_insert):
@@ -397,17 +397,16 @@ def find_best_move(start, state, successors, target_tile, heuristic):
                 choice = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move[0]}
                 res.append({'choice': choice, 'priority': chosen_move[1]})
             
-            for i in res:
-                if i['priority'] <= best['priority']:
-                    best = i
-            
+        for i in res:
+            if i['priority'] <= best['priority']:
+                best = i
             print(best['choice'] )
             return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
         
-        if time.time() - start_time > 3:
+        else:
             raise Exception("Temps imparti dépassé")
 
-
+    
 
 #--------------RUN-------------------
 
