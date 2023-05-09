@@ -1,0 +1,14 @@
+2023-05-09 12:52:54,086:INFO:state:State Created
+2023-05-09 12:52:55,464:INFO:server:Game Server For Labyrinthe
+2023-05-09 12:52:55,581:INFO:ui:UI started
+2023-05-09 12:52:57,609:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-09 12:52:57,612:INFO:championship:Championship Task Started
+2023-05-09 12:52:57,612:INFO:state:State Dumper Started
+2023-05-09 12:53:01,442:INFO:inscription:Subscription received from 127.0.0.1:61038
+2023-05-09 12:53:01,500:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-09 12:53:02,971:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-09 12:53:06,595:INFO:inscription:Subscription received from 127.0.0.1:61041
+2023-05-09 12:53:06,599:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-09 12:53:07,671:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-09 12:53:32,624:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:53:35,929:ERROR:network:Unable to Open Connection to 127.0.0.1:8880

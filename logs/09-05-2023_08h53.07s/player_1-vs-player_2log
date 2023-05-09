@@ -1,0 +1,9 @@
+2023-05-09 08:53:20,233:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 08:53:21,096:DEBUG:Player_1 VS Player_2:Player_1 play None
+2023-05-09 08:53:21,096:WARNING:Player_1 VS Player_2:This is a Bad Move. None is not a valid Move
+2023-05-09 08:53:21,504:DEBUG:Player_1 VS Player_2:Player_1 play None
+2023-05-09 08:53:21,504:WARNING:Player_1 VS Player_2:This is a Bad Move. None is not a valid Move
+2023-05-09 08:53:21,911:DEBUG:Player_1 VS Player_2:Player_1 play None
+2023-05-09 08:53:21,911:WARNING:Player_1 VS Player_2:This is a Bad Move. None is not a valid Move
+2023-05-09 08:53:21,920:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 08:53:21,940:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

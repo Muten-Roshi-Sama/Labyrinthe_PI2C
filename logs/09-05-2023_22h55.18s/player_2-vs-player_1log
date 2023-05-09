@@ -1,0 +1,14 @@
+2023-05-09 22:55:55,394:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 22:55:56,122:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'A', 'new_position': 8}
+2023-05-09 22:55:56,775:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 47}
+2023-05-09 22:55:57,197:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 15}
+2023-05-09 22:55:57,727:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 46}
+2023-05-09 22:55:58,259:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 22}
+2023-05-09 22:55:58,684:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'H', 'new_position': 35}
+2023-05-09 22:55:59,097:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 13}, 'gate': 'K', 'new_position': 29}
+2023-05-09 22:55:59,610:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'I', 'new_position': 34}
+2023-05-09 22:56:00,198:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 32}
+2023-05-09 22:56:00,805:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 14}
+2023-05-09 22:56:01,385:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 13}, 'gate': 'E', 'new_position': 18}
+2023-05-09 22:56:02,159:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'J', 'new_position': 4}
+2023-05-09 22:56:02,165:INFO:Player_2 VS Player_1:Match Done. Player_1 Won

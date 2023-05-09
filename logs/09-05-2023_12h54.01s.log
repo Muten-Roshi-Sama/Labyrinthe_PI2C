@@ -1,0 +1,27 @@
+2023-05-09 12:54:01,968:INFO:state:State Created
+2023-05-09 12:54:03,056:INFO:server:Game Server For Labyrinthe
+2023-05-09 12:54:03,203:INFO:ui:UI started
+2023-05-09 12:54:04,893:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-09 12:54:04,894:INFO:championship:Championship Task Started
+2023-05-09 12:54:04,895:INFO:state:State Dumper Started
+2023-05-09 12:54:06,299:INFO:inscription:Subscription received from 127.0.0.1:61087
+2023-05-09 12:54:06,301:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-09 12:54:07,661:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-09 12:54:09,356:INFO:inscription:Subscription received from 127.0.0.1:61090
+2023-05-09 12:54:09,365:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-09 12:54:10,539:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-09 12:54:40,474:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:54:40,561:INFO:championship:Remaining: 1/2
+2023-05-09 12:54:53,882:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:55:07,245:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:55:21,619:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:55:34,911:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:55:48,605:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:56:02,751:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:56:16,184:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:56:30,053:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:56:44,409:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:56:58,895:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:57:12,998:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 12:57:16,823:INFO:inscription:Subscription received from 127.0.0.1:61232
+2023-05-09 12:57:16,824:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)

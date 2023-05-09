@@ -1,0 +1,7 @@
+2023-05-09 09:13:25,137:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 09:13:30,460:WARNING:Player_1 VS Player_2:Player_1 unavailable (). Wait for 3 seconds
+2023-05-09 09:13:36,656:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': None}
+2023-05-09 09:13:36,656:WARNING:Player_1 VS Player_2:This is a Bad Move. Invalid new position
+2023-05-09 09:13:37,213:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 09:13:40,208:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 09:13:40,295:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

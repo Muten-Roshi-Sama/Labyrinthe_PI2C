@@ -1,0 +1,3 @@
+2023-05-09 22:25:40,036:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 22:25:40,769:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 2}
+2023-05-09 22:25:41,196:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': True, 'item': 19}, 'gate': 'H', 'new_position': 44}

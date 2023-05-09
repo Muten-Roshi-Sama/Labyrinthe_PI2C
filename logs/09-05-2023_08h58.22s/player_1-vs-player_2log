@@ -1,0 +1,6 @@
+2023-05-09 08:58:43,546:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 08:58:47,796:WARNING:Player_1 VS Player_2:Player_1 unavailable (). Wait for 3 seconds
+2023-05-09 08:58:54,728:WARNING:Player_1 VS Player_2:Player_1 unavailable (). Wait for 3 seconds
+2023-05-09 08:59:01,692:WARNING:Player_1 VS Player_2:Player_1 unavailable (). Wait for 3 seconds
+2023-05-09 08:59:04,775:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 08:59:04,808:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

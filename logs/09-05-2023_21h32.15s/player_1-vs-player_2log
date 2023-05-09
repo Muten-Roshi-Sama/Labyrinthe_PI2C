@@ -1,0 +1,8 @@
+2023-05-09 21:32:25,511:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 21:32:29,419:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 21}
+2023-05-09 21:32:32,573:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 37}
+2023-05-09 21:32:36,155:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 21:32:54,489:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-09 21:33:13,030:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-09 21:33:16,105:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 21:33:16,108:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

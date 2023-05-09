@@ -1,0 +1,27 @@
+2023-05-09 08:54:58,402:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 08:54:58,995:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:54:58,997:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:54:59,413:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:54:59,413:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:54:59,815:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:54:59,816:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:54:59,871:WARNING:Player_2 VS Player_1:Player_2 has done too many Bad Moves
+2023-05-09 08:54:59,972:INFO:Player_2 VS Player_1:Match Done. Player_1 Won
+2023-05-09 08:55:36,495:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 08:55:36,495:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 08:55:37,174:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:55:37,174:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:55:37,175:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:55:37,175:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:55:37,701:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:55:37,701:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:55:37,702:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:55:37,702:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:55:38,019:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:55:38,019:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 08:55:38,019:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:55:38,019:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 08:55:38,027:WARNING:Player_2 VS Player_1:Player_2 has done too many Bad Moves
+2023-05-09 08:55:38,027:WARNING:Player_2 VS Player_1:Player_2 has done too many Bad Moves
+2023-05-09 08:55:38,030:INFO:Player_2 VS Player_1:Match Done. Player_1 Won
+2023-05-09 08:55:38,030:INFO:Player_2 VS Player_1:Match Done. Player_1 Won

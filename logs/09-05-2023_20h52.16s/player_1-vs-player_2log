@@ -1,0 +1,4 @@
+2023-05-09 20:52:28,115:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 20:52:31,158:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 1}
+2023-05-09 20:52:34,145:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 13}, 'gate': 'F', 'new_position': 36}
+2023-05-09 20:52:35,666:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds

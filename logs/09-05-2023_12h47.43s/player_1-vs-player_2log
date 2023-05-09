@@ -1,0 +1,9 @@
+2023-05-09 12:47:55,853:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 12:47:59,452:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 15}, 'gate': 'A', 'new_position': None}
+2023-05-09 12:47:59,453:WARNING:Player_1 VS Player_2:This is a Bad Move. Invalid new position
+2023-05-09 12:48:03,065:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 15}, 'gate': 'A', 'new_position': None}
+2023-05-09 12:48:03,065:WARNING:Player_1 VS Player_2:This is a Bad Move. Invalid new position
+2023-05-09 12:48:05,982:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 15}, 'gate': 'A', 'new_position': None}
+2023-05-09 12:48:05,982:WARNING:Player_1 VS Player_2:This is a Bad Move. Invalid new position
+2023-05-09 12:48:05,986:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 12:48:05,987:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

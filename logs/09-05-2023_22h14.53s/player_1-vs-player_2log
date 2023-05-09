@@ -1,0 +1,4 @@
+2023-05-09 22:15:07,893:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 22:15:10,788:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 16}
+2023-05-09 22:15:13,201:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 17}, 'gate': 'F', 'new_position': 46}
+2023-05-09 22:15:28,116:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds

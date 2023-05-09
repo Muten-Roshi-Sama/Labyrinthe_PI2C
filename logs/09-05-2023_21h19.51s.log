@@ -1,0 +1,27 @@
+2023-05-09 21:19:52,200:INFO:state:State Created
+2023-05-09 21:19:53,580:INFO:server:Game Server For Labyrinthe
+2023-05-09 21:19:53,644:INFO:ui:UI started
+2023-05-09 21:19:54,680:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-09 21:19:54,683:INFO:championship:Championship Task Started
+2023-05-09 21:19:54,683:INFO:state:State Dumper Started
+2023-05-09 21:19:55,804:INFO:inscription:Subscription received from 127.0.0.1:56461
+2023-05-09 21:19:55,810:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-09 21:19:56,951:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-09 21:20:00,572:INFO:inscription:Subscription received from 127.0.0.1:56463
+2023-05-09 21:20:00,576:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-09 21:20:01,627:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-09 21:20:27,988:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:20:31,306:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:20:43,492:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:20:51,318:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:20:57,143:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:20:57,144:INFO:championship:Remaining: 1/2
+2023-05-09 21:21:10,646:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:21:23,936:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:21:37,355:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:21:50,587:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:22:03,775:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:22:17,212:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:22:31,353:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:22:45,437:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 21:22:59,356:ERROR:network:Unable to Open Connection to 127.0.0.1:2000

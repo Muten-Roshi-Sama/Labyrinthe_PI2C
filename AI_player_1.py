@@ -11,14 +11,6 @@ import random
 import math 
 import heapq
 
-
-#GIT : /OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
-
-# C:/Users/vassi/OneDrive/Bureau/Cours/BA2/Q2/Projet_Info/Labo_5_Projet/Labyrinthe_PI2C
-
-# C:\Users\MediaMonster\OneDrive\Bureau\Labyrinthe_PI2C
-
-#----------------------------
 #TODO:
 """
 -debug fetch error when connecting to server
@@ -26,10 +18,6 @@ import heapq
 -add timeout to find_best_move() of 2900ms
 
 """
-
-
-
-
 
 #-----Variables----------
 player = 1
@@ -45,9 +33,8 @@ elif player == 2 :
 
 
 max_recv_length = 10000
-timeout = 2.95 #milliseconds
+timeout = 2.6 #seconds
 serverAddress = ('localhost', 3000) 
-
 
 
 
@@ -69,7 +56,7 @@ with socket.socket() as s:
 print(response)
 
 def main():
-    print("------------------------")
+    # print("------------------------")
     with socket.socket() as s:
         s.bind(('', request_port))
         s.settimeout(1)
@@ -82,18 +69,18 @@ def main():
                 req = json.loads(request)
                 message = req["request"]
                 
+                start_time=time.time() 
+                
                 # print(message, 'hohoh')
                 if message == "ping":
                     client.send(json.dumps({'response': 'pong'}).encode())
 
                 elif message == "state":
-                    time_start = time.time()
+                    # time_start = time.time()
                     state = message
                     # print(state)
                     my_index = state["current"]
                     current_pos = state["position"][my_index]
-                    # print(state["positions"][my_index])
-                    # print(BFS(state["positions"][0]))
 
                 elif message == "play":
                     # print("MESSAGE : ", req)
@@ -105,7 +92,7 @@ def main():
                     my_target = target_finder(state)
 
                     print("start_pos :",current_pos)
-                    print('my target :',my_target)
+                    print("my target's tile : ",my_target)
 
                     showBoard(board)
 
@@ -113,7 +100,7 @@ def main():
                     error_list = req["errors"]
                     print("ERRORS : ", error_list)
 
-                    chosen_move = find_best_move(current_pos, state, successors, my_target, manhattan_distance)
+                    chosen_move = find_best_move(state, successors, manhattan_distance)
 
                     client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
 
@@ -208,80 +195,6 @@ def isCoordsValid(i, j):
 def add(A, B):
     return tuple(a + b for a, b in zip(A, B))
 
-
-
-
-
-#-------------LEVEL_3--------------------------
-"""_______MY_Operator functions_________"""
-
-
-def target_finder(state):
-    target_ID = state["target"]
-    board = state["board"]
-    for i in board:
-        if i['item'] == target_ID:
-            return board.index(i)
-    print('Could not find target')
-
-def possible_orientations(tile):   #TODO use tuple to erase dubbles. 
-    """Generate all possible orientations of a given tile.{'N': False, 'E': True, 'S': True, 'W': False, 'item': None}"""
-    res = []
-    new_tile = tile
-    for i in range(4):
-        if new_tile not in res:
-            res.append(new_tile)
-        new_tile = turn_tile(tile)
-    return res
-
-
-#-------------LEVEL_4--------------------------
-"""_______Main_functions_________"""
-
-def successors(state, index):
-    """Check all possible movements starting from the index of the tile."""
-    res = []
-    board = state['board']
-    print('current tile = ', index)
-    for direction in ["N", "S", "E", "W"]:
-        # print("current_tile : ",)  # direction, " = ", board[index][direction]
-        if board[index][direction]: #check if current tile is open in the asked direction
-            coords = add(index2coords(index), DIRECTIONS[direction]["coords"]) #coords of the next tile
-            next_tile_index = coords2index(*coords)
-            # print("coord_valid : ", isCoordsValid(*coords))
-            if isCoordsValid(*coords):
-                next_tile = board[next_tile_index] #retrieve the NSWE-direction of the next tile
-                opposite_dir = DIRECTIONS[direction]["opposite"]
-                # print("next_tile : ",opposite_dir, " = ", next_tile[opposite_dir])
-                if next_tile[opposite_dir]:
-                    res.append(next_tile_index)
-                    # print("added index : ",next_tile_index, "  ", board[next_tile_index])
-        print('------------')
-    print('poss_moves_list = ', res)
-    return res
-
-def next(state, move):
-        """Create a copy of the board accounting for the changes inserting a tile in a gate makes."""
-        new_state = copy.deepcopy(state)
-
-        new_board, new_free = slideTiles(board=state["board"], free=move["tile"], gate=move["gate"])
-        new_state["board"] = new_board
-        new_state["tile"] = new_free
-
-        new_positions = []
-        for position in state["positions"]:
-            if onTrack(position, move["gate"]):
-                if position == GATES[move["gate"]]["end"]:
-                    new_positions.append(GATES[move["gate"]]["start"])
-                    continue
-                new_positions.append(position + GATES[move["gate"]]["inc"])
-                continue
-            new_positions.append(position)
-
-        new_state["positions"] = new_positions
-
-        return new_state
-
 def showBoard(board):
     mat = []
     for i in range(28):
@@ -311,6 +224,107 @@ def showBoard(board):
         mat[i + 3][j + 3] = "-"
 
     print("\n".join(["".join(line) for line in mat]))
+
+
+
+#-------------LEVEL_3--------------------------
+"""_______MY_Operator functions_________"""
+
+
+def target_finder(state):
+    target_ID = state["target"]
+    board = state["board"]
+    for i in board:
+        if i['item'] == target_ID:
+            return board.index(i)
+    print('Could not find target')
+
+def possible_orientations(tile):   #TODO use tuple to erase dubbles. 
+    """Generate all possible orientations of a given tile.{'N': False, 'E': True, 'S': True, 'W': False, 'item': None}"""
+    res = []
+    new_tile = tile
+    for i in range(4):
+        if new_tile not in res:
+            res.append(new_tile)
+        new_tile = turn_tile(tile)
+    return res
+
+def timeit(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"{func.__name__} took {end_time - start_time} seconds.")
+        return result
+    return wrapper
+
+#@timeit
+def Best_gates(tile, heuristic):
+    """Sort gates from closest to furthest."""
+    res = []
+    final_res = []
+    for i in GATES:
+        # print("i = ", i)
+        res.append({'gate': i, 'priority': heuristic(tile, GATES[i]['start'])}) #creates a list of dict with as key the gate and value its distance from the current tile.
+    # print('res = ', res.sort(key=lambda elem: elem['priority']))
+    res.sort(key=lambda elem: elem['priority'], reverse=False)
+    for i in range(len(res)):
+        final_res.append(res[i]['gate'])
+    print('FINAL_RES_BEST GATES = ', final_res)
+    return final_res
+
+
+
+
+
+#-------------LEVEL_4--------------------------
+"""_______Main_functions_________"""
+
+# @timeit
+def successors(state, index):  #runtime : 0.001sec
+    """Check all possible movements starting from the index of the tile."""
+    res = []
+    board = state['board']
+    # print('current tile = ', index)
+    for direction in ["N", "S", "E", "W"]:
+        # print("current_tile : ",)  # direction, " = ", board[index][direction]
+        if board[index][direction]: #check if current tile is open in the asked direction
+            coords = add(index2coords(index), DIRECTIONS[direction]["coords"]) #coords of the next tile
+            next_tile_index = coords2index(*coords)
+            # print("coord_valid : ", isCoordsValid(*coords))
+            if isCoordsValid(*coords):
+                next_tile = board[next_tile_index] #retrieve the NSWE-direction of the next tile
+                opposite_dir = DIRECTIONS[direction]["opposite"]
+                # print("next_tile : ",opposite_dir, " = ", next_tile[opposite_dir])
+                if next_tile[opposite_dir]:
+                    res.append(next_tile_index)
+                    # print("added index : ",next_tile_index, "  ", board[next_tile_index])
+        # print('------------')
+    # print('poss_moves_list = ', res)
+    return res
+
+# @timeit
+def next(state, move):  #runtime : next took 0.002
+        """Create a copy of the board accounting for the changes inserting a tile in a gate makes."""
+        new_state = copy.deepcopy(state)
+
+        new_board, new_free = slideTiles(board=state["board"], free=move["tile"], gate=move["gate"])
+        new_state["board"] = new_board
+        new_state["tile"] = new_free
+
+        new_positions = []
+        for position in state["positions"]:
+            if onTrack(position, move["gate"]):
+                if position == GATES[move["gate"]]["end"]:
+                    new_positions.append(GATES[move["gate"]]["start"])
+                    continue
+                new_positions.append(position + GATES[move["gate"]]["inc"])
+                continue
+            new_positions.append(position)
+
+        new_state["positions"] = new_positions
+
+        return new_state
 
 class PriorityQueue:
     def __init__(self):
@@ -344,69 +358,108 @@ def manhattan_distance(current_pos, goal_pos):
     return abs(start[0] - end[0]) + abs(start[1] - end[1])
 
 
-def BestFS(start, state, successors, target_tile, heuristic):
-    """ start= my_index
-        node : also an index
-        parent = {tile : parent_of tile}
-    """
-    Best = []
-    q = PriorityQueue()  #stores the nodes to be visited
-    parent = {}  # stores the parent nodes of each visited node
-    parent[start] = None
-    q.enqueue(start, heuristic(start, target_tile))  # add the initial node (the board passed as parameter) to the queue q with a priority value of heuristic(board, target)
-
-    while not q.isEmpty():
-        node = q.dequeue() # dequeues the node with the LOWEST priority from the priority queue
-        # print('node = ', node)
-        # print('target_tile = ', target_tile)
-        if node == target_tile:
-            return (node, None)
-        for successor in successors(state, index=node): #for move in possible_moves_list (given by the successors function)
-            if successor not in parent: #checks if node has already been visited
-                parent[successor] = node  #adds it to the parent dictionary, 
-                q.enqueue(successor, heuristic(successor, target_tile))
-                q.add_to_historic(successor, heuristic(successor, target_tile))
-                print('Priority list = ')
-                q.show_list()
-        node = None
-
-    Best = {'value': None, 'priority': 9999}
-    for i in q.show_historic():
-        if i['priority'] <= Best['priority']:
-            Best = i
-
-    Best_tile = Best['value']
-    Priority = Best['priority']
-    return (Best_tile, Priority)
-
-
-
-def find_best_move(start, state, successors, target_tile, heuristic):
+@timeit
+def find_best_move(state, successors, heuristic):
     """Call BestFS for all possible gate placements and tile orientations,
         returns a path to target if not the path with the best priority.
     """
-    start_time=time.time()
+    start_time = time.time()
+    
+    my_index = state['current']
+    start = state['positions'][my_index]
+    target_tile = target_finder(state)
+    
+    # @timeit
+    def BestFS(state, successors, heuristic):
+        """         """
+        
+        my_index = state['current']
+        start = state['positions'][my_index]
+        target_tile = target_finder(state)
+        
+        q = PriorityQueue()  #stores the nodes to be visited
+        parent = {}  # stores the parent nodes of each visited node
+        parent[start] = None
+        if target_tile:
+            q.enqueue(start, heuristic(start, target_tile))  # add the initial node (the board passed as parameter) to the queue q with a priority value of heuristic(board, target)
+
+        while not q.isEmpty():
+            if time.time() - start_time > timeout:
+                    break
+            node = q.dequeue() # dequeues the node with the LOWEST priority from the priority queue
+            # print('node = ', node)
+            # print('target_tile = ', target_tile)
+            if node == target_tile:
+                return (node, 1, True)
+            for successor in successors(state, index=node): #for move in possible_moves_list (given by the successors function)
+                if successor not in parent: #checks if node has already been visited
+                    parent[successor] = node  #adds it to the parent dictionary, 
+                    q.enqueue(successor, heuristic(successor, target_tile))
+                    q.add_to_historic(successor, heuristic(successor, target_tile))
+                    # print('Priority list = ')
+                    # q.show_list()
+            node = None
+
+
+        Best = {'value': start, 'priority': 9999}
+        for i in q.show_historic():
+            if i['priority'] is not None:
+                if i['priority'] <= Best['priority']:
+                    Best = i
+
+        Best_tile = Best['value']
+        Priority = Best['priority']
+
+        res = (Best_tile, Priority, False)
+
+        # print('RES BestFS = ', res)
+        return res
+
+
+
+    #init :
     res = []
-    best = {'choice': None, 'priority': 9999}
-    while time.time() - start_time > timeout:
-        for chosen_gate in GATES.keys():
-            tile_to_insert = state['tile']  #the RAW tile we have just received
-            for tile in possible_orientations(tile_to_insert):
-                new_board = next(state, move={"tile": tile, "gate": chosen_gate})
-                chosen_move = BestFS(start, state, successors, target_tile, heuristic)   #returns (chosen_tile=7 , priority=1, path_to_target=True)
-                choice = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move[0]}
-                res.append({'choice': choice, 'priority': chosen_move[1]})
+    #Gates loop :
+    for chosen_gate in Best_gates(start, manhattan_distance):
+        tile_to_insert = state['tile']  #the RAW tile we have just received
+
+        #Tile orient. loop :
+        for tile in possible_orientations(tile_to_insert):
+            new_board = next(state, move={"tile": tile, "gate": chosen_gate})
+
+            chosen_move = BestFS(new_board, successors, heuristic)   #returns (chosen_tile=7 , priority=1)
+
+            print("chosen move = ",chosen_move)
+            if chosen_move[0] == 15:
+                showBoard(new_board['board'])
+
+            chosen_tile = chosen_move[0]
+            tile_priority = chosen_move[1]
+            path_to_target = chosen_move[2]
+            if path_to_target == True:
+                return {"tile": tile, "gate": chosen_gate, "new_position": chosen_tile}
             
-        for i in res:
+            choice = {"tile": tile, "gate": chosen_gate, "new_position": chosen_tile}
+            res.append({'choice': choice, 'priority': tile_priority})
+        
+            if time.time() - start_time > timeout:  #BREAK only breaks from 1 LOOP !!
+                break
+        if time.time() - start_time > timeout:
+                break
+
+    #choose best move
+    print('find_best_move RES = ', res)
+    print('current_pos = ', start)
+
+    best = {'choice': None, 'priority': 9999}
+    for i in res:
+        if i['priority']:
             if i['priority'] <= best['priority']:
                 best = i
-            print(best['choice'] )
-            return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
-        
-        else:
-            raise Exception("Temps imparti dépassé")
-
+        print('FINAL_MOVE = ', best['choice'] )
+        return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
     
+
 
 #--------------RUN-------------------
 

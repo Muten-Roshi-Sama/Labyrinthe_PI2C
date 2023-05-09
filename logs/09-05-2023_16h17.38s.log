@@ -1,0 +1,104 @@
+2023-05-09 16:17:38,508:INFO:state:State Created
+2023-05-09 16:17:40,658:INFO:server:Game Server For Labyrinthe
+2023-05-09 16:17:40,815:INFO:ui:UI started
+2023-05-09 16:17:42,338:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-09 16:17:42,340:INFO:championship:Championship Task Started
+2023-05-09 16:17:42,342:INFO:state:State Dumper Started
+2023-05-09 16:17:43,447:INFO:inscription:Subscription received from 127.0.0.1:62412
+2023-05-09 16:17:43,463:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-09 16:17:44,564:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-09 16:17:49,261:INFO:inscription:Subscription received from 127.0.0.1:62414
+2023-05-09 16:17:49,262:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-09 16:17:50,306:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-09 16:18:08,206:INFO:championship:Remaining: 1/2
+2023-05-09 16:18:22,106:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:18:35,742:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:18:49,458:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:19:03,026:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:19:16,406:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:19:29,609:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:19:42,722:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:19:55,916:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:20:09,317:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:20:22,870:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:20:36,318:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:20:50,147:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:21:03,327:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:21:16,487:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:21:29,574:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:21:42,741:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:21:56,050:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:22:09,526:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:22:22,921:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:22:36,513:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:22:50,024:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:23:03,479:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:23:16,840:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:23:30,261:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:23:43,824:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:23:57,176:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:24:10,394:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:24:23,544:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:24:36,928:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:24:50,377:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:25:03,911:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:25:17,645:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:25:30,861:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:25:44,118:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:25:57,681:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:26:10,904:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:26:24,577:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:26:37,745:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:26:50,950:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:27:04,099:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:27:17,503:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:27:31,205:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:27:44,606:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:27:57,720:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 16:28:10,918:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:26:15,178:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:26:33,384:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:26:47,269:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:27:01,274:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:27:15,129:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:27:28,864:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:27:42,705:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:27:56,461:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:28:10,349:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:28:24,039:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:28:37,698:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:28:50,875:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:29:04,020:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:29:17,140:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:29:30,701:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:29:43,818:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:29:57,149:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:30:10,291:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:30:23,703:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:30:37,080:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:30:50,429:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:31:03,531:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:31:17,188:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:31:30,346:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:31:43,562:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:31:57,189:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:32:10,361:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:32:23,743:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:32:36,881:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:32:50,039:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:33:03,219:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:33:16,405:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:33:29,605:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:33:42,940:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:33:56,035:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:34:09,195:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:34:22,599:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:34:36,183:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:34:49,539:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:35:02,935:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:35:16,253:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:35:29,410:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:35:42,803:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:35:56,200:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:36:09,706:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-09 18:36:22,943:ERROR:network:Unable to Open Connection to 127.0.0.1:2000

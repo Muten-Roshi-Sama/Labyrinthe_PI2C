@@ -1,0 +1,10 @@
+2023-05-09 21:16:52,100:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 21:16:56,377:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'A', 'new_position': 1}
+2023-05-09 21:16:59,612:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 19}, 'gate': 'F', 'new_position': 33}
+2023-05-09 21:17:02,551:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 20}, 'gate': 'A', 'new_position': 2}
+2023-05-09 21:17:05,523:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 34}
+2023-05-09 21:17:08,843:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 9}
+2023-05-09 21:17:11,866:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 33}
+2023-05-09 21:17:14,619:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 35}
+2023-05-09 21:17:17,411:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 25}
+2023-05-09 21:17:20,095:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds

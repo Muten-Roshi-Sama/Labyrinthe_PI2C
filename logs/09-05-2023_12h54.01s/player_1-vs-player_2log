@@ -1,0 +1,6 @@
+2023-05-09 12:54:10,744:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 12:54:15,024:WARNING:Player_1 VS Player_2:Player_1 unavailable (). Wait for 3 seconds
+2023-05-09 12:54:22,328:WARNING:Player_1 VS Player_2:Player_1 unavailable (). Wait for 3 seconds
+2023-05-09 12:54:26,155:WARNING:Player_1 VS Player_2:Player_1 unavailable ([WinError 10054] An existing connection was forcibly closed by the remote host). Wait for 3 seconds
+2023-05-09 12:54:29,341:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 12:54:29,343:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

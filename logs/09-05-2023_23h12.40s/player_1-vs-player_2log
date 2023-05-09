@@ -1,0 +1,17 @@
+2023-05-09 23:12:57,838:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 23:12:59,290:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 19}, 'gate': 'A', 'new_position': 8}
+2023-05-09 23:13:00,322:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'G', 'new_position': 27}
+2023-05-09 23:13:00,920:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 30}
+2023-05-09 23:13:01,556:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 33}
+2023-05-09 23:13:01,892:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': True, 'item': 21}, 'gate': 'A', 'new_position': 8}
+2023-05-09 23:13:02,388:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 20}, 'gate': 'E', 'new_position': 40}
+2023-05-09 23:13:03,013:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 14}
+2023-05-09 23:13:03,699:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 15}, 'gate': 'F', 'new_position': 45}
+2023-05-09 23:13:04,912:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'K', 'new_position': 15}
+2023-05-09 23:13:05,198:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 20}, 'gate': 'H', 'new_position': 43}
+2023-05-09 23:13:06,056:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 39}
+2023-05-09 23:13:06,443:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 17}, 'gate': 'A', 'new_position': 5}
+2023-05-09 23:13:06,669:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 33}
+2023-05-09 23:13:07,029:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 15}, 'gate': 'D', 'new_position': 34}
+2023-05-09 23:13:07,606:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 14}
+2023-05-09 23:13:07,620:INFO:Player_1 VS Player_2:Match Done. Player_1 Won

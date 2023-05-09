@@ -1,0 +1,24 @@
+2023-05-09 21:12:15,625:INFO:state:State Created
+2023-05-09 21:12:16,953:INFO:server:Game Server For Labyrinthe
+2023-05-09 21:12:17,042:INFO:ui:UI started
+2023-05-09 21:12:19,577:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-09 21:12:19,612:INFO:championship:Championship Task Started
+2023-05-09 21:12:19,621:INFO:state:State Dumper Started
+2023-05-09 21:12:20,225:INFO:inscription:Subscription received from 127.0.0.1:56245
+2023-05-09 21:12:20,248:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-09 21:12:21,305:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-09 21:12:21,898:INFO:inscription:Subscription received from 127.0.0.1:56247
+2023-05-09 21:12:21,905:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-09 21:12:23,006:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-09 21:12:41,901:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:12:44,851:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:12:57,730:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:13:03,533:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:13:12,738:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:13:12,740:INFO:championship:Remaining: 1/2
+2023-05-09 21:13:25,878:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:13:39,894:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:13:53,076:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:14:07,188:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:14:21,744:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 21:14:36,199:ERROR:network:Unable to Open Connection to 127.0.0.1:8880

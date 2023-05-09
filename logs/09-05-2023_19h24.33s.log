@@ -1,0 +1,70 @@
+2023-05-09 19:24:33,530:INFO:state:State Created
+2023-05-09 19:24:34,262:INFO:server:Game Server For Labyrinthe
+2023-05-09 19:24:34,414:INFO:ui:UI started
+2023-05-09 19:24:35,381:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-09 19:24:35,385:INFO:championship:Championship Task Started
+2023-05-09 19:24:35,385:INFO:state:State Dumper Started
+2023-05-09 19:24:37,175:INFO:inscription:Subscription received from 127.0.0.1:64812
+2023-05-09 19:24:37,206:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-09 19:24:38,276:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-09 19:24:46,301:INFO:inscription:Subscription received from 127.0.0.1:64814
+2023-05-09 19:24:46,303:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-09 19:24:47,423:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-09 19:24:57,502:INFO:championship:Remaining: 1/2
+2023-05-09 19:25:19,055:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:25:21,584:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:25:33,639:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:25:39,517:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:25:48,094:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:25:48,095:INFO:championship:Remaining: 0/2
+2023-05-09 19:26:01,403:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:26:14,709:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:26:28,718:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:26:42,520:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:26:56,440:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:27:10,433:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:27:24,218:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:27:38,119:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:27:51,821:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:28:05,718:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:28:19,417:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:28:33,340:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:28:47,155:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:29:00,667:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:29:14,539:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:29:28,047:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:29:41,735:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:29:54,957:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:30:08,184:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:30:21,274:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:30:34,406:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:30:47,681:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:31:00,887:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:31:14,088:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:31:27,323:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:31:40,488:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:31:53,682:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:32:06,768:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:32:19,945:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:32:33,080:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:32:46,225:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 19:32:59,528:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:39:14,791:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:39:28,864:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:39:42,656:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:39:56,254:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:40:10,106:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:40:23,769:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:40:37,509:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:40:51,472:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:41:05,672:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:41:20,067:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:41:34,155:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:41:47,301:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:42:01,450:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:42:15,407:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:42:28,604:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:42:41,832:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:42:55,572:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:43:09,847:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-09 20:43:24,053:ERROR:network:Unable to Open Connection to 127.0.0.1:8880

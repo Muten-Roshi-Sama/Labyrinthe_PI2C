@@ -1,0 +1,22 @@
+2023-05-09 20:43:44,154:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 20:43:47,176:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 20}, 'gate': 'A', 'new_position': None}
+2023-05-09 20:43:47,177:WARNING:Player_1 VS Player_2:This is a Bad Move. Invalid new position
+2023-05-09 20:43:50,039:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 20}, 'gate': 'A', 'new_position': None}
+2023-05-09 20:43:50,039:WARNING:Player_1 VS Player_2:This is a Bad Move. Invalid new position
+2023-05-09 20:43:51,400:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 20:43:54,478:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 20:43:54,500:INFO:Player_1 VS Player_2:Match Done. Player_2 Won
+2023-05-09 20:44:19,323:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 20:44:19,323:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 20:44:22,397:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 1}
+2023-05-09 20:44:22,397:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 1}
+2023-05-09 20:44:24,993:WARNING:Player_1 VS Player_2:Player_2 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 20:44:24,993:WARNING:Player_1 VS Player_2:Player_2 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 20:44:42,054:WARNING:Player_1 VS Player_2:Player_2 unavailable (Unable to Open Connection to 127.0.0.1:2000). Wait for 3 seconds
+2023-05-09 20:44:42,054:WARNING:Player_1 VS Player_2:Player_2 unavailable (Unable to Open Connection to 127.0.0.1:2000). Wait for 3 seconds
+2023-05-09 20:44:59,423:WARNING:Player_1 VS Player_2:Player_2 unavailable (Unable to Open Connection to 127.0.0.1:2000). Wait for 3 seconds
+2023-05-09 20:44:59,423:WARNING:Player_1 VS Player_2:Player_2 unavailable (Unable to Open Connection to 127.0.0.1:2000). Wait for 3 seconds
+2023-05-09 20:45:02,488:WARNING:Player_1 VS Player_2:Player_2 has done too many Bad Moves
+2023-05-09 20:45:02,488:WARNING:Player_1 VS Player_2:Player_2 has done too many Bad Moves
+2023-05-09 20:45:02,596:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-05-09 20:45:02,596:INFO:Player_1 VS Player_2:Match Done. Player_1 Won

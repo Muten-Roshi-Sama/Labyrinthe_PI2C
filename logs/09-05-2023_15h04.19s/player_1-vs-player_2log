@@ -1,0 +1,8 @@
+2023-05-09 15:04:27,442:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 15:04:30,699:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 17}, 'gate': 'A', 'new_position': 16}
+2023-05-09 15:04:30,703:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-05-09 15:04:33,863:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 17}, 'gate': 'A', 'new_position': 16}
+2023-05-09 15:04:33,867:WARNING:Player_1 VS Player_2:This is a Bad Move. Your new_position is unreachable
+2023-05-09 15:04:36,451:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 15:04:39,487:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 15:04:39,524:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

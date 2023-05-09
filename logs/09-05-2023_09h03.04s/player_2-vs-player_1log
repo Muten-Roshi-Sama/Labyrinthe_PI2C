@@ -1,0 +1,6 @@
+2023-05-09 09:03:37,923:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 09:03:42,000:WARNING:Player_2 VS Player_1:Player_2 unavailable (). Wait for 3 seconds
+2023-05-09 09:03:48,754:WARNING:Player_2 VS Player_1:Player_2 unavailable (). Wait for 3 seconds
+2023-05-09 09:03:53,799:WARNING:Player_2 VS Player_1:Player_2 unavailable ([WinError 64] The specified network name is no longer available). Wait for 3 seconds
+2023-05-09 09:03:56,896:WARNING:Player_2 VS Player_1:Player_2 has done too many Bad Moves
+2023-05-09 09:03:56,915:INFO:Player_2 VS Player_1:Match Done. Player_1 Won

@@ -1,0 +1,4 @@
+2023-05-09 21:35:02,447:INFO:Player_2 VS Player_1:Match Started
+2023-05-09 21:35:05,957:DEBUG:Player_2 VS Player_1:Player_2 play None
+2023-05-09 21:35:05,958:WARNING:Player_2 VS Player_1:This is a Bad Move. None is not a valid Move
+2023-05-09 21:35:07,613:WARNING:Player_2 VS Player_1:Player_2 unavailable (Distant socket closed). Wait for 3 seconds

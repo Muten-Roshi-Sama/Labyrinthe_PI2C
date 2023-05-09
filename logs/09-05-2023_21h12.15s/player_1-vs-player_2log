@@ -1,0 +1,6 @@
+2023-05-09 21:12:23,205:INFO:Player_1 VS Player_2:Match Started
+2023-05-09 21:12:26,802:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-09 21:12:44,876:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-09 21:13:03,546:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-09 21:13:06,613:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-09 21:13:06,616:INFO:Player_1 VS Player_2:Match Done. Player_2 Won
