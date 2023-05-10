@@ -1,0 +1,13 @@
+2023-05-10 14:29:32,830:INFO:Player_2 VS Player_1:Match Started
+2023-05-10 14:29:34,700:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 1}
+2023-05-10 14:29:35,436:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 15}, 'gate': 'F', 'new_position': 48}
+2023-05-10 14:29:36,748:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 3}
+2023-05-10 14:29:37,525:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 22}, 'gate': 'F', 'new_position': 34}
+2023-05-10 14:29:38,434:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'B', 'new_position': 10}
+2023-05-10 14:29:39,262:DEBUG:Player_2 VS Player_1:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 33}
+2023-05-10 14:29:40,077:DEBUG:Player_2 VS Player_1:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'B', 'new_position': 32}
+2023-05-10 14:29:55,361:WARNING:Player_2 VS Player_1:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-10 14:30:13,715:WARNING:Player_2 VS Player_1:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-10 14:30:32,263:WARNING:Player_2 VS Player_1:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-10 14:30:35,328:WARNING:Player_2 VS Player_1:Player_1 has done too many Bad Moves
+2023-05-10 14:30:35,331:INFO:Player_2 VS Player_1:Match Done. Player_2 Won

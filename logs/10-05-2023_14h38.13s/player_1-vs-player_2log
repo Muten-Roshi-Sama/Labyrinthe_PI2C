@@ -1,0 +1,67 @@
+2023-05-10 14:40:07,034:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:40:08,561:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 17}, 'gate': 'D', 'new_position': 14}
+2023-05-10 14:40:09,835:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 41}
+2023-05-10 14:40:11,319:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'K', 'new_position': 7}
+2023-05-10 14:40:12,618:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 41}
+2023-05-10 14:40:13,977:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 23}
+2023-05-10 14:40:14,372:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 17}, 'gate': 'G', 'new_position': 47}
+2023-05-10 14:40:15,231:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 14}, 'gate': 'K', 'new_position': 32}
+2023-05-10 14:40:15,713:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'C', 'new_position': 20}
+2023-05-10 14:40:16,863:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 17}, 'gate': 'E', 'new_position': 26}
+2023-05-10 14:40:17,269:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 14}, 'gate': 'E', 'new_position': 8}
+2023-05-10 14:40:18,014:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 18}
+2023-05-10 14:40:18,400:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 2}
+2023-05-10 14:40:18,403:INFO:Player_1 VS Player_2:Match Done. Player_2 Won
+2023-05-10 14:40:27,821:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:40:27,821:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:40:29,133:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 18}, 'gate': 'A', 'new_position': 1}
+2023-05-10 14:40:29,133:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 18}, 'gate': 'A', 'new_position': 1}
+2023-05-10 14:40:29,520:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 20}, 'gate': 'F', 'new_position': 33}
+2023-05-10 14:40:29,520:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 20}, 'gate': 'F', 'new_position': 33}
+2023-05-10 14:40:30,501:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 7}
+2023-05-10 14:40:30,501:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 7}
+2023-05-10 14:40:31,286:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 45}
+2023-05-10 14:40:31,286:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'E', 'new_position': 45}
+2023-05-10 14:40:31,751:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 12}, 'gate': 'D', 'new_position': 20}
+2023-05-10 14:40:31,751:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 12}, 'gate': 'D', 'new_position': 20}
+2023-05-10 14:40:32,157:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'H', 'new_position': 16}
+2023-05-10 14:40:32,157:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'H', 'new_position': 16}
+2023-05-10 14:40:32,559:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 40}
+2023-05-10 14:40:32,559:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 40}
+2023-05-10 14:40:32,927:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'K', 'new_position': 13}
+2023-05-10 14:40:32,927:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'K', 'new_position': 13}
+2023-05-10 14:40:33,299:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 32}
+2023-05-10 14:40:33,299:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 32}
+2023-05-10 14:40:34,897:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'D', 'new_position': 19}
+2023-05-10 14:40:34,897:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'D', 'new_position': 19}
+2023-05-10 14:40:35,273:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 18}, 'gate': 'F', 'new_position': 25}
+2023-05-10 14:40:35,273:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 18}, 'gate': 'F', 'new_position': 25}
+2023-05-10 14:40:35,278:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-05-10 14:40:35,278:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-05-10 14:40:40,800:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:40:40,800:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:40:40,800:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:40:41,523:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 23}, 'gate': 'L', 'new_position': 30}
+2023-05-10 14:40:41,523:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 23}, 'gate': 'L', 'new_position': 30}
+2023-05-10 14:40:41,523:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': True, 'W': False, 'item': 23}, 'gate': 'L', 'new_position': 30}
+2023-05-10 14:40:42,373:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'C', 'new_position': 46}
+2023-05-10 14:40:42,373:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'C', 'new_position': 46}
+2023-05-10 14:40:42,373:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'C', 'new_position': 46}
+2023-05-10 14:40:42,771:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'H', 'new_position': 38}
+2023-05-10 14:40:42,771:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'H', 'new_position': 38}
+2023-05-10 14:40:42,771:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'H', 'new_position': 38}
+2023-05-10 14:40:44,039:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 16}, 'gate': 'G', 'new_position': 46}
+2023-05-10 14:40:44,039:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 16}, 'gate': 'G', 'new_position': 46}
+2023-05-10 14:40:44,039:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 16}, 'gate': 'G', 'new_position': 46}
+2023-05-10 14:40:44,447:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 28}
+2023-05-10 14:40:44,447:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 28}
+2023-05-10 14:40:44,447:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 28}
+2023-05-10 14:40:45,137:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'G', 'new_position': 46}
+2023-05-10 14:40:45,137:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'G', 'new_position': 46}
+2023-05-10 14:40:45,137:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'G', 'new_position': 46}
+2023-05-10 14:40:45,511:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 25}
+2023-05-10 14:40:45,511:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 25}
+2023-05-10 14:40:45,511:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'J', 'new_position': 25}
+2023-05-10 14:40:45,516:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-05-10 14:40:45,516:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-05-10 14:40:45,516:INFO:Player_1 VS Player_2:Match Done. Player_1 Won

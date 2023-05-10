@@ -1,0 +1,16 @@
+2023-05-10 14:34:30,084:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:34:31,408:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 14}, 'gate': 'A', 'new_position': 0}
+2023-05-10 14:34:32,906:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': True, 'W': True, 'item': 19}, 'gate': 'F', 'new_position': 33}
+2023-05-10 14:34:33,290:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': 16}, 'gate': 'L', 'new_position': 7}
+2023-05-10 14:34:34,534:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'E', 'new_position': 13}
+2023-05-10 14:34:35,270:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 9}
+2023-05-10 14:34:36,065:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 13}, 'gate': 'L', 'new_position': 8}
+2023-05-10 14:34:36,799:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'B', 'new_position': 23}
+2023-05-10 14:34:37,196:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'L', 'new_position': 4}
+2023-05-10 14:34:37,582:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': True, 'item': 21}, 'gate': 'K', 'new_position': 28}
+2023-05-10 14:34:38,648:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'B', 'new_position': 11}
+2023-05-10 14:34:54,461:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-10 14:35:12,436:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-10 14:35:30,401:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-10 14:35:33,519:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-10 14:35:33,542:INFO:Player_1 VS Player_2:Match Done. Player_2 Won

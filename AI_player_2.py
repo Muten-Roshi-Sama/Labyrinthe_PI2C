@@ -96,7 +96,7 @@ def main():
 
                     showBoard(board)
 
-                    lives = req["lives"]
+                    # lives = req["lives"]
                     error_list = req["errors"]
                     print("ERRORS : ", error_list)
 
@@ -110,9 +110,6 @@ def main():
             pass
         except OSError:
             print("Server address not reachable.")
-
-
-
 
 
 
@@ -416,7 +413,6 @@ def find_best_move(state, successors, heuristic):
         return res
 
 
-
     #init :
     res = []
     #Gates loop :
@@ -470,60 +466,6 @@ while __name__ == '__main__':
     # asyncio.run(init_variables(args.player))
     main()
 
-
-
-
-#-----------Temporary_Storage-----------------
-
-def a_star(state, start, goal):
-    """A* algorithm to find the shortest path between two positions"""
-    frontier = [(0, start)]
-    came_from = {start: None}
-    cost_so_far = {start: 0}
-    distance = []
-    while frontier:
-        _, current = heapq.heappop(frontier)
-
-        if current == goal:
-            break
-        for next_pos in successors(current, state):
-            new_cost = cost_so_far[current] + 1  # assuming all moves have the same cost
-            if next_pos not in cost_so_far or new_cost < cost_so_far[next_pos]:
-                cost_so_far[next_pos] = new_cost
-                priority = new_cost + distance(next_pos, goal)
-                heapq.heappush(frontier, (priority, next_pos))
-                came_from[next_pos] = current
-
-    path = []
-    pos = goal
-    while pos != start:
-        path.append(pos)
-        pos = came_from[pos]
-    path.append(start)
-    path.reverse()
-
-    return path
-
-def evaluate_move(state, move):
-    current_pos = state["positions"][state["current"]]
-    goal_pos = move["new_position"]
-    path = a_star(state, current_pos, goal_pos)
-    return -len(path)  # negative because we want the shortest path to have a higher score
-
-def best_first_choice(state, moves, treasure_pos):
-    my_index = state["current"]
-    current_pos = state["positions"][my_index]
-    best_move = None
-    best_score = -float('inf')
-    treasure_pos_2D = index2coords(treasure_pos)  
-    for move in moves:
-        new_pos = tuple(map(sum, zip(current_pos, move)))
-        distance = math.sqrt((new_pos[0] - treasure_pos_2D[0])**2 + (new_pos[1] - treasure_pos_2D[1])**2) #TODO
-        score = -distance  # negative because we want the shortest distance to have a higher score
-        if score > best_score:
-            best_move = move
-            best_score = score
-    return best_move
 
 
 

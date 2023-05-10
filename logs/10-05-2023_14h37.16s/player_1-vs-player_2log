@@ -1,0 +1,10 @@
+2023-05-10 14:37:39,321:INFO:Player_1 VS Player_2:Match Started
+2023-05-10 14:37:41,557:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'A', 'new_position': 7}
+2023-05-10 14:37:43,239:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 39}
+2023-05-10 14:37:44,121:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': 15}, 'gate': 'L', 'new_position': 15}
+2023-05-10 14:37:44,978:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'F', 'new_position': 32}
+2023-05-10 14:37:45,721:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 21}
+2023-05-10 14:37:48,014:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': 16}, 'gate': 'E', 'new_position': 15}
+2023-05-10 14:37:48,916:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': False, 'E': True, 'S': False, 'W': True, 'item': None}, 'gate': 'G', 'new_position': 34}
+2023-05-10 14:37:50,370:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': None}, 'gate': 'A', 'new_position': 23}
+2023-05-10 14:38:05,944:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds

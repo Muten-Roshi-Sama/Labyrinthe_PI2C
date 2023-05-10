@@ -1,0 +1,66 @@
+2023-05-10 14:20:30,453:INFO:state:State Created
+2023-05-10 14:20:32,657:INFO:server:Game Server For Labyrinthe
+2023-05-10 14:20:32,727:INFO:ui:UI started
+2023-05-10 14:20:33,849:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-10 14:20:33,852:INFO:championship:Championship Task Started
+2023-05-10 14:20:33,854:INFO:state:State Dumper Started
+2023-05-10 14:24:16,186:INFO:inscription:Subscription received from 127.0.0.1:62272
+2023-05-10 14:24:16,245:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:24:16,259:INFO:inscription:Subscription received from 127.0.0.1:62273
+2023-05-10 14:24:16,261:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:24:31,225:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:24:31,466:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:24:38,220:INFO:inscription:Subscription received from 127.0.0.1:62313
+2023-05-10 14:24:38,283:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:24:45,368:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:24:53,652:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:24:57,037:INFO:inscription:Subscription received from 127.0.0.1:62345
+2023-05-10 14:24:57,112:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:24:57,292:INFO:inscription:Subscription received from 127.0.0.1:62346
+2023-05-10 14:24:57,330:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:24:59,281:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:25:12,264:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:25:12,450:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:25:12,981:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:25:20,883:INFO:inscription:Subscription received from 127.0.0.1:62391
+2023-05-10 14:25:20,901:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:25:21,331:INFO:inscription:Subscription received from 127.0.0.1:62392
+2023-05-10 14:25:21,370:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:25:26,981:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:25:32,758:INFO:inscription:Subscription received from 127.0.0.1:62422
+2023-05-10 14:25:32,761:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:25:32,838:INFO:inscription:Subscription received from 127.0.0.1:62423
+2023-05-10 14:25:32,844:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:25:32,983:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-10 14:25:33,759:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-10 14:25:35,892:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:25:40,946:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-10 14:25:54,671:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:26:08,268:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:26:09,197:INFO:inscription:Subscription received from 127.0.0.1:62474
+2023-05-10 14:26:09,210:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:26:09,271:INFO:inscription:Subscription received from 127.0.0.1:62475
+2023-05-10 14:26:09,295:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:26:22,058:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:26:24,024:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:26:24,129:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:26:35,267:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:26:48,615:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:27:01,775:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:27:14,890:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:27:22,912:INFO:inscription:Subscription received from 127.0.0.1:62565
+2023-05-10 14:27:22,995:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:27:23,047:INFO:inscription:Subscription received from 127.0.0.1:62566
+2023-05-10 14:27:23,047:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:27:28,931:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:27:38,229:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:27:38,413:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:27:43,045:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:27:49,710:INFO:inscription:Subscription received from 127.0.0.1:62620
+2023-05-10 14:27:49,731:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:27:49,757:INFO:inscription:Subscription received from 127.0.0.1:62622
+2023-05-10 14:27:49,758:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:27:57,179:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:28:04,285:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:28:04,661:ERROR:network:Unable to Open Connection to 127.0.0.1:2000
+2023-05-10 14:28:11,069:ERROR:network:Unable to Open Connection to 127.0.0.1:8880

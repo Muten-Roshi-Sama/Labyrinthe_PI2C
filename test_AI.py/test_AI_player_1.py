@@ -456,14 +456,18 @@ def find_best_move(state, successors, heuristic):
         return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
     
 
+def test_machin():
+    for i in range(10):
+        main()
+
 #--------------RUN-------------------
 
-while __name__ == '__main__':
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument('player', help='The player you want to be (1 or 2)')
-    # args = parser.parse_args()
-    # asyncio.run(init_variables(args.player))
-    main()
+# while __name__ == '__main__':
+#     # parser = argparse.ArgumentParser()
+#     # parser.add_argument('player', help='The player you want to be (1 or 2)')
+#     # args = parser.parse_args()
+#     # asyncio.run(init_variables(args.player))
+#     main()
 
 
 

@@ -1,0 +1,36 @@
+2023-05-10 14:38:14,603:INFO:state:State Created
+2023-05-10 14:38:17,503:INFO:server:Game Server For Labyrinthe
+2023-05-10 14:38:17,633:INFO:ui:UI started
+2023-05-10 14:38:19,338:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-10 14:38:19,464:INFO:championship:Championship Task Started
+2023-05-10 14:38:19,471:INFO:state:State Dumper Started
+2023-05-10 14:38:20,567:INFO:inscription:Subscription received from 127.0.0.1:63285
+2023-05-10 14:38:20,568:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-10 14:38:21,646:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-10 14:39:06,400:INFO:inscription:Subscription received from 127.0.0.1:63299
+2023-05-10 14:39:06,408:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:39:19,722:INFO:inscription:Subscription received from 127.0.0.1:63310
+2023-05-10 14:39:19,723:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:39:20,948:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:39:34,914:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:39:35,311:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:39:49,972:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:39:56,713:INFO:state:Client Player_1 Removed
+2023-05-10 14:39:58,449:INFO:inscription:Subscription received from 127.0.0.1:63363
+2023-05-10 14:39:58,496:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:40:04,230:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-10 14:40:06,605:INFO:inscription:Subscription received from 127.0.0.1:63376
+2023-05-10 14:40:06,639:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-10 14:40:06,773:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-10 14:40:18,504:INFO:championship:Remaining: 1/2
+2023-05-10 14:40:22,005:INFO:championship:Remaining: 0/2
+2023-05-10 14:40:27,619:INFO:state:Match Player_1 VS Player_2 Reset
+2023-05-10 14:40:29,982:INFO:state:Match Player_2 VS Player_1 Reset
+2023-05-10 14:40:35,434:INFO:championship:Remaining: 1/2
+2023-05-10 14:40:38,803:INFO:state:Match Player_1 VS Player_2 Reset
+2023-05-10 14:40:40,521:INFO:championship:Remaining: 1/2
+2023-05-10 14:40:44,251:INFO:state:Match Player_2 VS Player_1 Reset
+2023-05-10 14:40:45,671:INFO:championship:Remaining: 1/2
+2023-05-10 14:40:56,822:INFO:championship:Remaining: 0/2
+2023-05-10 14:41:07,101:INFO:server:Championship Task Stopped
+2023-05-10 14:41:07,167:INFO:server:State Dumper Task Stopped
