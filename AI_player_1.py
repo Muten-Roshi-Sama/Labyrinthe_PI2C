@@ -25,11 +25,11 @@ player = 1
 if player == 1:
     player_name = "Player_1"
     request_port = 8880
-    Matricules = ["1000", "2000"]
+    Matricules = ["10000", "2000"]
 elif player == 2 :
     player_name = "Player_2"
     request_port = 2000
-    Matricules = ["21245", "3333"]
+    Matricules = ["21245", "20026"]
 
 
 max_recv_length = 10000

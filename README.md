@@ -24,6 +24,9 @@ OUTPUT = renvoie le mouvement qui se raproche le plus du trésor
 ###6###
 position_successive : calcule la position suivante du joueur en fonction de son mouvement (vers le haut, le bas, la gauche ou la droite)
 
+###TEST###
+pour pouvoir voir le coerage report, il faut d'abord lancer l'IA et le server et ensuite lancer la commande coverage report qui nous indiquerai environ 94%
+
 ----Bibliothèques utilisées----
 socket : communication serveur-client
 json : pour charger et sauvegarder des données au format JSON
