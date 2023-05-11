@@ -1,0 +1,18 @@
+2023-05-11 10:42:08,332:INFO:state:State Created
+2023-05-11 10:42:10,457:INFO:server:Game Server For Labyrinthe
+2023-05-11 10:42:10,559:INFO:ui:UI started
+2023-05-11 10:42:12,282:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-11 10:42:12,290:INFO:championship:Championship Task Started
+2023-05-11 10:42:12,298:INFO:state:State Dumper Started
+2023-05-11 10:42:13,047:INFO:inscription:Subscription received from 127.0.0.1:49334
+2023-05-11 10:42:13,048:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-11 10:42:14,148:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-11 10:42:16,958:INFO:inscription:Subscription received from 127.0.0.1:49336
+2023-05-11 10:42:16,959:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:42:18,028:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 10:42:23,650:INFO:championship:Remaining: 1/2
+2023-05-11 10:42:27,456:INFO:championship:Remaining: 0/2
+2023-05-11 10:42:35,973:INFO:inscription:Subscription received from 127.0.0.1:49352
+2023-05-11 10:42:36,010:ERROR:inscription:Name 'Player_1' Already Used
+2023-05-11 10:43:23,443:INFO:inscription:Subscription received from 127.0.0.1:49370
+2023-05-11 10:43:23,517:ERROR:inscription:Name 'Player_1' Already Used

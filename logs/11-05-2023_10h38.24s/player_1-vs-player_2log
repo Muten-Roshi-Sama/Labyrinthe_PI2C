@@ -1,0 +1,23 @@
+2023-05-11 10:38:48,948:INFO:Player_1 VS Player_2:Match Started
+2023-05-11 10:38:49,451:WARNING:Player_1 VS Player_2:Player_1 unavailable (Distant socket closed). Wait for 3 seconds
+2023-05-11 10:39:07,090:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-11 10:39:55,368:INFO:Player_1 VS Player_2:Match Started
+2023-05-11 10:39:55,368:INFO:Player_1 VS Player_2:Match Started
+2023-05-11 10:39:56,566:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 3}
+2023-05-11 10:39:56,566:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': False, 'S': False, 'W': True, 'item': None}, 'gate': 'L', 'new_position': 3}
+2023-05-11 10:39:57,321:DEBUG:Player_1 VS Player_2:Player_2 play {'choice': {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 14}, 'gate': 'G', 'new_position': 48}, 'priority': 9999}
+2023-05-11 10:39:57,321:DEBUG:Player_1 VS Player_2:Player_2 play {'choice': {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 14}, 'gate': 'G', 'new_position': 48}, 'priority': 9999}
+2023-05-11 10:39:57,322:WARNING:Player_1 VS Player_2:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:57,322:WARNING:Player_1 VS Player_2:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:58,387:DEBUG:Player_1 VS Player_2:Player_2 play {'choice': {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 14}, 'gate': 'E', 'new_position': 48}, 'priority': 9999}
+2023-05-11 10:39:58,387:DEBUG:Player_1 VS Player_2:Player_2 play {'choice': {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 14}, 'gate': 'E', 'new_position': 48}, 'priority': 9999}
+2023-05-11 10:39:58,387:WARNING:Player_1 VS Player_2:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:58,387:WARNING:Player_1 VS Player_2:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:59,520:DEBUG:Player_1 VS Player_2:Player_2 play {'choice': {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 14}, 'gate': 'E', 'new_position': 48}, 'priority': 9999}
+2023-05-11 10:39:59,520:DEBUG:Player_1 VS Player_2:Player_2 play {'choice': {'tile': {'N': False, 'E': False, 'S': True, 'W': True, 'item': 14}, 'gate': 'E', 'new_position': 48}, 'priority': 9999}
+2023-05-11 10:39:59,520:WARNING:Player_1 VS Player_2:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:59,520:WARNING:Player_1 VS Player_2:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:59,522:WARNING:Player_1 VS Player_2:Player_2 has done too many Bad Moves
+2023-05-11 10:39:59,522:WARNING:Player_1 VS Player_2:Player_2 has done too many Bad Moves
+2023-05-11 10:39:59,523:INFO:Player_1 VS Player_2:Match Done. Player_1 Won
+2023-05-11 10:39:59,523:INFO:Player_1 VS Player_2:Match Done. Player_1 Won

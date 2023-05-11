@@ -1,37 +1,56 @@
-# Labyrinthe_PI2C
+# Project Name : Labyrinthe_PI2C
 
-###1###
-Algorithme de recherche choisi(stratégie): Best First Searh   
-L'algorithme explore d'abord les nœuds les plus proches du trésor ---\ but=trouver une solution plus rapidement.
-Parcour l'espace de recherche et trouver le chemin le plus court qui mène à un trésor = évalue les nœuds (ou positions) en fonction de leur distance (heuristique) par rapport au trésor.
+##Project Description : 
+Uses AI (Best First Search) to explores the search space by selecting the most promising node to visit next based on some heuristic evaluation function. There is a 3 seconds constraint to answer.
 
-###2###
-target_finder : fonction qui vérifie si un nœud(state) donné (ou position) correspond à un trésor
 
-###3###
-successor(state,index) : génère tout les coups possibles à partir d'un état donné (state= etat atuel du jeu) elle génère les successeur du noeud (les états suivants) dans l'arbre de recherche. Elle utilise la fonction next pour calculer l'état suivant pour chaque coup possible(voir ###4### pour next) 
-    +
-joue le role d'une fontion path : fonction qui vérifie si il existe un chemin (suite de positions) entre la position actuelle du joueur et le trésor le plus proche. Renvoie la liste des positions du chemin (res)
+##Prerequisites
+To run the agent, Python 3.8 or a newer version must be installed. Additionally, the following libraries must be installed:
 
-###4###
-next : fonction qui calcule l'état suivant en fonction du coup joué (1 coup= inserer une tuile dans le board + Bouger le joueur)
+socket: client-server communication
+json: for loading and saving data in JSON format
+copy: for making deep copies of objects
+time: for measuring execution time
 
-###5###
-Find_best_move : choisi le meilleur mouvement à jouer à chaque étape du jeu. 
-INPUT = la liste des mouvements possible pour le joueur (générée par la fonction successor)
-OUTPUT = renvoie le mouvement qui se raproche le plus du trésor
 
-###6###
-position_successive : calcule la position suivante du joueur en fonction de son mouvement (vers le haut, le bas, la gauche ou la droite)
+##Installation
+Clone this repository.
+Install the required dependencies using pip install -r requirements.txt.
+Run the project using python : server.py, AI_player_1.py and AI_player_2.py
 
-----Bibliothèques utilisées----
-socket : communication serveur-client
-json : pour charger et sauvegarder des données au format JSON
-copy : pour faire copies profondes d'objets
-collections : utilisé pour des conteneurs spécialisés
-time : pour mesurer le temps d'exécution
-random : génère nombres aléatoires
-sys :  interagi avec le système d'exploitation
-math :  pour fonctions mathématiques
-heapq : implémentation d'une file de priorité
+
+##Level_1 : """Connecting to the server"""
+We connect to the server using the socket library.
+
+##Level_2 : """Operator functions"""
+Operator functions, credits : PI2CChampionship > Labyrinthe > game.py
+
+##Level_3 : """MY_operator functions"""
+Our own Operator functions to simplify the main functions.
+
+##Level_4 : """Main_functions"""
+successor(state, index): generates all possible moves from a given state (state = current game state). It generates
+     the successors of the node (the following states) in the search tree. It uses the function "next" to calculate the next state for each possible move. It plays the role of a path function: a function that checks if there is a path (a sequence of positions) between the current player position and the nearest treasure. It returns the list of positions of the path (res).
+
+next(state, move): a function that makes a deepcopy of the original state and insert a tile. 
+    Credits : PI2CChampionship > Labyrinthe > game.py
+
+find_best_move(state, successors, heuristic, flag): : Call BestFS for all possible gate placements and tile 
+    orientations. Returns the new position with the lowest priority (i.e. 1, 2, represents the distance to target) using manhattan_distance as heuristic. Uses a flag to prevent sending the same Badmove again.
+
+
+##Pytest
+While running the plain server.py and AI_player_2.py in the background, we run test_player_1.
+Using coverage, we obtain a +90% coverage.
+
+
+##Authors
+Flioris Vassily, 21245
+Hamzi Loubna, 20026
+
+
+##Credits
+PI2CChampionship
+ChatGPT-OpenAI
+Stackoverflow
 

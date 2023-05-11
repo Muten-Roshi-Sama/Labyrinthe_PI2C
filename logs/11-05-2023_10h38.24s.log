@@ -1,0 +1,39 @@
+2023-05-11 10:38:25,085:INFO:state:State Created
+2023-05-11 10:38:27,939:INFO:server:Game Server For Labyrinthe
+2023-05-11 10:38:28,279:INFO:ui:UI started
+2023-05-11 10:38:32,168:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-11 10:38:32,223:INFO:championship:Championship Task Started
+2023-05-11 10:38:32,258:INFO:state:State Dumper Started
+2023-05-11 10:38:40,906:INFO:inscription:Subscription received from 127.0.0.1:49162
+2023-05-11 10:38:40,942:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-11 10:38:47,583:INFO:inscription:Subscription received from 127.0.0.1:49165
+2023-05-11 10:38:47,642:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:38:48,724:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 10:39:05,668:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-11 10:39:07,065:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-11 10:39:17,163:INFO:state:Match Player_1 VS Player_2 Reset
+2023-05-11 10:39:17,163:INFO:state:Client Player_1 Removed
+2023-05-11 10:39:20,518:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-11 10:39:22,890:INFO:inscription:Subscription received from 127.0.0.1:49214
+2023-05-11 10:39:22,924:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:39:37,082:INFO:state:Client Player_1 Removed
+2023-05-11 10:39:37,909:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-11 10:39:38,527:INFO:state:Client Player_2 Removed
+2023-05-11 10:39:42,759:INFO:inscription:Subscription received from 127.0.0.1:49237
+2023-05-11 10:39:42,812:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:39:46,820:INFO:inscription:Subscription received from 127.0.0.1:49245
+2023-05-11 10:39:46,864:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-11 10:39:48,003:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-11 10:39:51,058:INFO:inscription:Subscription received from 127.0.0.1:49250
+2023-05-11 10:39:51,059:ERROR:inscription:Name 'Player_1' Already Used
+2023-05-11 10:39:51,632:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 10:39:55,071:INFO:championship:Remaining: 1/2
+2023-05-11 10:39:59,647:INFO:championship:Remaining: 0/2
+2023-05-11 10:41:07,751:INFO:inscription:Subscription received from 127.0.0.1:49285
+2023-05-11 10:41:07,755:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:41:22,447:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-11 10:41:40,924:INFO:inscription:Subscription received from 127.0.0.1:49307
+2023-05-11 10:41:40,924:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:41:55,548:ERROR:network:Unable to Open Connection to 127.0.0.1:8880
+2023-05-11 10:41:59,637:INFO:inscription:Subscription received from 127.0.0.1:49321
+2023-05-11 10:41:59,637:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)

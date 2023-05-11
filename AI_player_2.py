@@ -1,21 +1,11 @@
-import asyncio
-import argparse
-import threading
 import socket
 import json
-# from .. import game
 import copy
-from collections import deque
 import time as time
-import random
-import math 
-import heapq
+
 
 #TODO:
 """
--debug fetch error when connecting to server
--debugging when remaining on the same tile. res = []
--add timeout to find_best_move() of 2900ms
 
 """
 
@@ -25,15 +15,15 @@ player = 2
 if player == 1:
     player_name = "Player_1"
     request_port = 8880
-    Matricules = ["1000", "2000"]
+    Matricules = ["212450", "200260"]
 elif player == 2 :
     player_name = "Player_2"
     request_port = 2000
-    Matricules = ["21245", "3333"]
+    Matricules = ["21245", "20026"]
 
 
 max_recv_length = 10000
-timeout = 2.6 #seconds
+timeout = 2.8 #seconds
 serverAddress = ('localhost', 3000) 
 
 
@@ -100,7 +90,11 @@ def main():
                     error_list = req["errors"]
                     print("ERRORS : ", error_list)
 
-                    chosen_move = find_best_move(state, successors, manhattan_distance)
+                    flag = False
+                    if not len(error_list) == 0:
+                        flag  = True
+
+                    chosen_move = find_best_move(state, successors, manhattan_distance, flag)
 
                     client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
 
@@ -157,14 +151,12 @@ def slideTiles(board, free, gate):
         src -= inc
     new_board[start] = free
     return new_board, new_free
-
 def onTrack(index, gate):
     return index in range(
         GATES[gate]["start"],
         GATES[gate]["end"] + GATES[gate]["inc"],
         GATES[gate]["inc"],
     )
-
 def turn_tile(tile):
     res = copy.deepcopy(tile)
     res["N"] = tile["E"]
@@ -172,26 +164,20 @@ def turn_tile(tile):
     res["S"] = tile["W"]
     res["W"] = tile["N"]
     return res
-
 def isSameTile(t1, t2):
     for _ in range(4):
         if t1 == t2:
             return True
         t2 = turn_tile(t2)
     return False
-
 def index2coords(index):
     return index // 7, index % 7
-
 def coords2index(i, j):
     return i * 7 + j
-
 def isCoordsValid(i, j):
     return i >= 0 and i < 7 and j >= 0 and i < 7
-
 def add(A, B):
     return tuple(a + b for a, b in zip(A, B))
-
 def showBoard(board):
     mat = []
     for i in range(28):
@@ -229,6 +215,7 @@ def showBoard(board):
 
 
 def target_finder(state):
+    """finds the location of the target in the board"""
     target_ID = state["target"]
     board = state["board"]
     for i in board:
@@ -269,9 +256,6 @@ def Best_gates(tile, heuristic):
         final_res.append(res[i]['gate'])
     print('FINAL_RES_BEST GATES = ', final_res)
     return final_res
-
-
-
 
 
 #-------------LEVEL_4--------------------------
@@ -354,12 +338,9 @@ def manhattan_distance(current_pos, goal_pos):
     end = index2coords(goal_pos)
     return abs(start[0] - end[0]) + abs(start[1] - end[1])
 
-
 @timeit
-def find_best_move(state, successors, heuristic):
-    """Call BestFS for all possible gate placements and tile orientations,
-        returns a path to target if not the path with the best priority.
-    """
+def find_best_move(state, successors, heuristic, flag):
+    """Call BestFS for all possible gate placements and tile orientations"""
     start_time = time.time()
     
     my_index = state['current']
@@ -368,7 +349,7 @@ def find_best_move(state, successors, heuristic):
     
     # @timeit
     def BestFS(state, successors, heuristic):
-        """         """
+        """ implementation of the Best-First Search algorithm. """
         
         my_index = state['current']
         start = state['positions'][my_index]
@@ -447,15 +428,20 @@ def find_best_move(state, successors, heuristic):
     print('find_best_move RES = ', res)
     print('current_pos = ', start)
 
-    best = {'choice': None, 'priority': 9999}
-    for i in res:
-        if i['priority']:
-            if i['priority'] <= best['priority']:
-                best = i
-        print('FINAL_MOVE = ', best['choice'] )
-        return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
-    
+    res.sort(key=lambda elem: elem['priority'], reverse=False)
+    print('resrrr = ', res)
 
+    if flag:
+        return res[1]['choice']
+    return res[0]['choice']
+
+    # best = {'choice': None, 'priority': 9999}
+    # for i in res:
+    #     if i['priority']:
+    #         if i['priority'] <= best['priority']:
+    #             best = i
+    #     print('FINAL_MOVE = ', best['choice'] )
+    #     return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
 
 #--------------RUN-------------------
 
@@ -465,8 +451,3 @@ while __name__ == '__main__':
     # args = parser.parse_args()
     # asyncio.run(init_variables(args.player))
     main()
-
-
-
-
-#-------------------------------------------------

@@ -1,0 +1,53 @@
+2023-05-11 10:52:07,509:INFO:state:State Created
+2023-05-11 10:52:08,776:INFO:server:Game Server For Labyrinthe
+2023-05-11 10:52:08,971:INFO:ui:UI started
+2023-05-11 10:52:13,793:INFO:inscription:Inscription Task Started. Listen on port 3000
+2023-05-11 10:52:13,800:INFO:championship:Championship Task Started
+2023-05-11 10:52:13,801:INFO:state:State Dumper Started
+2023-05-11 10:52:14,271:INFO:inscription:Subscription received from 127.0.0.1:50140
+2023-05-11 10:52:14,273:INFO:inscription:Pending client: Player_2 (127.0.0.1:2000)
+2023-05-11 10:52:15,299:INFO:inscription:Client 'Player_2' Fully Subscribed
+2023-05-11 10:52:16,335:INFO:inscription:Subscription received from 127.0.0.1:50142
+2023-05-11 10:52:16,336:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:52:17,423:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 10:52:49,039:INFO:championship:Remaining: 1/2
+2023-05-11 10:53:00,244:INFO:championship:Remaining: 0/2
+2023-05-11 10:53:37,760:INFO:inscription:Subscription received from 127.0.0.1:50226
+2023-05-11 10:53:37,761:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 10:53:38,812:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:02:22,324:INFO:inscription:Subscription received from 127.0.0.1:50410
+2023-05-11 11:02:22,325:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:02:23,356:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:03:16,846:INFO:inscription:Subscription received from 127.0.0.1:50446
+2023-05-11 11:03:16,847:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:03:17,889:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:03:40,817:INFO:inscription:Subscription received from 127.0.0.1:50457
+2023-05-11 11:03:40,818:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:03:41,843:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:05:20,152:INFO:inscription:Subscription received from 127.0.0.1:50499
+2023-05-11 11:05:20,153:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:05:21,176:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:09:51,347:INFO:inscription:Subscription received from 127.0.0.1:50591
+2023-05-11 11:09:51,348:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:09:52,431:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:26:34,797:INFO:inscription:Subscription received from 127.0.0.1:50996
+2023-05-11 11:26:34,798:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:26:35,815:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:27:45,763:INFO:inscription:Subscription received from 127.0.0.1:51058
+2023-05-11 11:27:45,764:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:27:46,757:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:27:57,304:INFO:inscription:Subscription received from 127.0.0.1:51064
+2023-05-11 11:27:57,348:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:27:58,430:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:28:11,833:INFO:inscription:Subscription received from 127.0.0.1:51073
+2023-05-11 11:28:11,833:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:28:12,888:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:28:26,392:INFO:inscription:Subscription received from 127.0.0.1:51082
+2023-05-11 11:28:26,392:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:28:27,439:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:28:37,631:INFO:inscription:Subscription received from 127.0.0.1:51090
+2023-05-11 11:28:37,632:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:28:38,726:INFO:inscription:Client 'Player_1' Fully Subscribed
+2023-05-11 11:28:50,999:INFO:inscription:Subscription received from 127.0.0.1:51104
+2023-05-11 11:28:51,024:INFO:inscription:Pending client: Player_1 (127.0.0.1:8880)
+2023-05-11 11:28:52,097:INFO:inscription:Client 'Player_1' Fully Subscribed

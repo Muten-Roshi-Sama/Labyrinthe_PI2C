@@ -1,0 +1,9 @@
+2023-05-11 10:39:51,929:INFO:Player_2 VS Player_1:Match Started
+2023-05-11 10:39:52,935:DEBUG:Player_2 VS Player_1:Player_2 play {'choice': {'tile': {'N': False, 'E': True, 'S': True, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 31}, 'priority': 5}
+2023-05-11 10:39:52,936:WARNING:Player_2 VS Player_1:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:54,048:DEBUG:Player_2 VS Player_1:Player_2 play {'choice': {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 31}, 'priority': 5}
+2023-05-11 10:39:54,048:WARNING:Player_2 VS Player_1:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:55,015:DEBUG:Player_2 VS Player_1:Player_2 play {'choice': {'tile': {'N': True, 'E': True, 'S': False, 'W': False, 'item': None}, 'gate': 'I', 'new_position': 31}, 'priority': 5}
+2023-05-11 10:39:55,015:WARNING:Player_2 VS Player_1:This is a Bad Move. Missing key 'tile'
+2023-05-11 10:39:55,029:WARNING:Player_2 VS Player_1:Player_2 has done too many Bad Moves
+2023-05-11 10:39:55,040:INFO:Player_2 VS Player_1:Match Done. Player_1 Won
