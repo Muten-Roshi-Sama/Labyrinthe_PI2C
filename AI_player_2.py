@@ -1,17 +1,14 @@
+
 import socket
 import json
 import copy
 import time as time
 
-
 #TODO:
 """
-
 """
-
 #-----Variables----------
 player = 2
-
 if player == 1:
     player_name = "Player_1"
     request_port = 8880
@@ -21,16 +18,13 @@ elif player == 2 :
     request_port = 2000
     Matricules = ["21245", "20026"]
 
-
 max_recv_length = 10000
 timeout = 2.8 #seconds
 serverAddress = ('localhost', 3000) 
 
 
-
 #--------------Level_1--------------------------
 """Connecting to the server"""
-
 
 request = {
 "request": "subscribe",
@@ -38,13 +32,11 @@ request = {
 "name": player_name,
 "matricules": Matricules
 }
-
 with socket.socket() as s:
     s.connect(serverAddress)
     s.send(json.dumps(request).encode())
     response = s.recv(max_recv_length).decode()
 print(response)
-
 def main():
     # print("------------------------")
     with socket.socket() as s:
@@ -64,40 +56,30 @@ def main():
                 # print(message, 'hohoh')
                 if message == "ping":
                     client.send(json.dumps({'response': 'pong'}).encode())
-
                 elif message == "state":
                     # time_start = time.time()
                     state = message
                     # print(state)
                     my_index = state["current"]
                     current_pos = state["position"][my_index]
-
                 elif message == "play":
                     # print("MESSAGE : ", req)
                     state = req['state']
-
                     board = state['board']
                     my_index = state['current']
                     current_pos = state['positions'][my_index]
                     my_target = target_finder(state)
-
                     print("start_pos :",current_pos)
                     print("my target's tile : ",my_target)
-
                     showBoard(board)
-
                     # lives = req["lives"]
                     error_list = req["errors"]
                     print("ERRORS : ", error_list)
-
                     flag = False
                     if not len(error_list) == 0:
                         flag  = True
-
                     chosen_move = find_best_move(state, successors, manhattan_distance, flag)
-
                     client.send(json.dumps({'response': 'move', 'move': chosen_move, "message" : "Hoho" }).encode())
-
                     print('############################')
                 
         except socket.timeout:
@@ -108,10 +90,8 @@ def main():
 
 
 
-
 #-----------------LEVEL_2------------------- 
 """_______Operator functions_________"""
-
 
 GATES = {
     "A": {"start": 1, "end": 43, "inc": 7},
@@ -205,14 +185,11 @@ def showBoard(board):
         mat[i + 3][j + 1] = "-"
         mat[i + 3][j + 2] = "-"
         mat[i + 3][j + 3] = "-"
-
     print("\n".join(["".join(line) for line in mat]))
-
 
 
 #-------------LEVEL_3--------------------------
 """_______MY_Operator functions_________"""
-
 
 def target_finder(state):
     """finds the location of the target in the board"""
@@ -222,7 +199,6 @@ def target_finder(state):
         if i['item'] == target_ID:
             return board.index(i)
     print('Could not find target')
-
 def possible_orientations(tile):   #TODO use tuple to erase dubbles. 
     """Generate all possible orientations of a given tile.{'N': False, 'E': True, 'S': True, 'W': False, 'item': None}"""
     res = []
@@ -232,7 +208,6 @@ def possible_orientations(tile):   #TODO use tuple to erase dubbles.
             res.append(new_tile)
         new_tile = turn_tile(tile)
     return res
-
 def timeit(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
@@ -241,7 +216,6 @@ def timeit(func):
         print(f"{func.__name__} took {end_time - start_time} seconds.")
         return result
     return wrapper
-
 #@timeit
 def Best_gates(tile, heuristic):
     """Sort gates from closest to furthest."""
@@ -257,10 +231,8 @@ def Best_gates(tile, heuristic):
     print('FINAL_RES_BEST GATES = ', final_res)
     return final_res
 
-
 #-------------LEVEL_4--------------------------
 """_______Main_functions_________"""
-
 # @timeit
 def successors(state, index):  #runtime : 0.001sec
     """Check all possible movements starting from the index of the tile."""
@@ -283,16 +255,13 @@ def successors(state, index):  #runtime : 0.001sec
         # print('------------')
     # print('poss_moves_list = ', res)
     return res
-
 # @timeit
 def next(state, move):  #runtime : next took 0.002
         """Create a copy of the board accounting for the changes inserting a tile in a gate makes."""
         new_state = copy.deepcopy(state)
-
         new_board, new_free = slideTiles(board=state["board"], free=move["tile"], gate=move["gate"])
         new_state["board"] = new_board
         new_state["tile"] = new_free
-
         new_positions = []
         for position in state["positions"]:
             if onTrack(position, move["gate"]):
@@ -302,42 +271,32 @@ def next(state, move):  #runtime : next took 0.002
                 new_positions.append(position + GATES[move["gate"]]["inc"])
                 continue
             new_positions.append(position)
-
         new_state["positions"] = new_positions
-
         return new_state
-
 class PriorityQueue:
     def __init__(self):
         self.data = []
         self.historic = []
-
     def enqueue(self, value, priority):
         self.data.append({'value': value, 'priority': priority})
         self.data.sort(key=lambda elem: elem['priority'], reverse=True)
-
     def add_to_historic(self, value, priority):
         self.historic.append({'value': value, 'priority': priority})
         self.historic.sort(key=lambda elem: elem['priority'], reverse=True)
-
     def dequeue(self):
         return self.data.pop(0)['value']
-
     def isEmpty(self):
         return len(self.data) == 0
-
     def show_list(self):
         return self.data
     
     def show_historic(self):
         return self.historic
-
 def manhattan_distance(current_pos, goal_pos):
     """Calculate the Manhattan distance heuristic between 2 given tiles."""
     start = index2coords(current_pos)
     end = index2coords(goal_pos)
     return abs(start[0] - end[0]) + abs(start[1] - end[1])
-
 @timeit
 def find_best_move(state, successors, heuristic, flag):
     """Call BestFS for all possible gate placements and tile orientations"""
@@ -360,7 +319,6 @@ def find_best_move(state, successors, heuristic, flag):
         parent[start] = None
         if target_tile:
             q.enqueue(start, heuristic(start, target_tile))  # add the initial node (the board passed as parameter) to the queue q with a priority value of heuristic(board, target)
-
         while not q.isEmpty():
             if time.time() - start_time > timeout:
                     break
@@ -378,38 +336,29 @@ def find_best_move(state, successors, heuristic, flag):
                     # q.show_list()
             node = None
 
-
         Best = {'value': start, 'priority': 9999}
         for i in q.show_historic():
             if i['priority'] is not None:
                 if i['priority'] <= Best['priority']:
                     Best = i
-
         Best_tile = Best['value']
         Priority = Best['priority']
-
         res = (Best_tile, Priority, False)
-
         # print('RES BestFS = ', res)
         return res
-
 
     #init :
     res = []
     #Gates loop :
     for chosen_gate in Best_gates(start, manhattan_distance):
         tile_to_insert = state['tile']  #the RAW tile we have just received
-
         #Tile orient. loop :
         for tile in possible_orientations(tile_to_insert):
             new_board = next(state, move={"tile": tile, "gate": chosen_gate})
-
             chosen_move = BestFS(new_board, successors, heuristic)   #returns (chosen_tile=7 , priority=1)
-
             print("chosen move = ",chosen_move)
             if chosen_move[0] == 15:
                 showBoard(new_board['board'])
-
             chosen_tile = chosen_move[0]
             tile_priority = chosen_move[1]
             path_to_target = chosen_move[2]
@@ -423,18 +372,14 @@ def find_best_move(state, successors, heuristic, flag):
                 break
         if time.time() - start_time > timeout:
                 break
-
     #choose best move
     print('find_best_move RES = ', res)
     print('current_pos = ', start)
-
     res.sort(key=lambda elem: elem['priority'], reverse=False)
     print('resrrr = ', res)
-
     if flag:
         return res[1]['choice']
     return res[0]['choice']
-
     # best = {'choice': None, 'priority': 9999}
     # for i in res:
     #     if i['priority']:
@@ -442,9 +387,7 @@ def find_best_move(state, successors, heuristic, flag):
     #             best = i
     #     print('FINAL_MOVE = ', best['choice'] )
     #     return best['choice']    # return chosen_move = {"tile": tile, "gate": chosen_gate, "new_position": chosen_move}
-
 #--------------RUN-------------------
-
 while __name__ == '__main__':
     # parser = argparse.ArgumentParser()
     # parser.add_argument('player', help='The player you want to be (1 or 2)')

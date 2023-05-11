@@ -9,3 +9,8 @@
 2023-05-11 11:31:43,508:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': False, 'S': True, 'W': False, 'item': None}, 'gate': 'F', 'new_position': 27}
 2023-05-11 11:31:44,511:DEBUG:Player_1 VS Player_2:Player_1 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 18}, 'gate': 'D', 'new_position': 10}
 2023-05-11 11:31:45,785:DEBUG:Player_1 VS Player_2:Player_2 play {'tile': {'N': True, 'E': True, 'S': False, 'W': True, 'item': 23}, 'gate': 'G', 'new_position': 45}
+2023-05-11 11:32:01,466:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-11 11:32:20,192:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-11 11:32:38,461:WARNING:Player_1 VS Player_2:Player_1 unavailable (Unable to Open Connection to 127.0.0.1:8880). Wait for 3 seconds
+2023-05-11 11:32:41,563:WARNING:Player_1 VS Player_2:Player_1 has done too many Bad Moves
+2023-05-11 11:32:41,580:INFO:Player_1 VS Player_2:Match Done. Player_2 Won
